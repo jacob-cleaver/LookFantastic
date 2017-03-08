@@ -13,7 +13,7 @@
 
     <script>
         $(function() {
-            $("[name=checkout] [id=address]").click(function() {
+            $("[name=checkout]").click(function() {
                 $('.toHide').hide();
                 $("#blk-" + $(this).val()).show();
             });
@@ -31,6 +31,54 @@
         <hr>
 
         <div class="row">
+            <div class="col-md-12">
+                <button name="checkout" type="button" href="#blk-1" class="btn btn-warning btn-lg submit-button col-md-4" value="1">
+                  <img src="public/images/Credit-Debit-Cards.png" alt="Credit/Debit Cards" title="Accepted Credit/Debit Cards" width="200px" height="25px">
+                </button>
+
+                <button name="checkout" type="button" href="#blk-2" class="btn btn-warning btn-lg submit-button col-md-4" value="2">
+                  <img src="public/images/PayPal.png" alt="PayPay" title="Pay by PayPal" width="90px" height="25px">
+                </button>
+
+                <button name="checkout" type="button" href="#blk-3" class="btn btn-warning btn-lg submit-button col-md-4" value="3">
+                  <img src="public/images/AliPay.png" alt="AliPay" title="Pay by AliPay" width="75px" height="25px">
+                </button>
+            </div>
+
+            <div id="blk-1" class="col-md-12 toHide" style="display:none">
+                <form class="col-md-12">
+                    <input class="form-control" type="text" placeholder="Full Name *">
+                    <input class="form-control" type="text" placeholder="House Number *">
+                    <input class="form-control" type="text" placeholder="Street *">
+                    <input class="form-control" type="text" placeholder="City/Town *">
+                    <input class="form-control" type="text" placeholder="County *">
+                    <input class="form-control" type="text" placeholder="Post Code/Zip *">
+                    <hr>
+                    <input class="form-control" type="text" placeholder="XXXX - XXXX - XXXX - XXXX">
+                    <input class="form-control" type="text" placeholder="MM/YYYY">
+                    <input class="form-control" type="text" placeholder="MM/YYYY">
+                    <input class="form-control" type="text" placeholder="CVV">
+                  </form>
+            </div>
+
+            <div id="blk-2" class="col-md-12 toHide" style="display:none">
+                <form class="col-md-12">
+                    <input class="form-control" type="text" placeholder="Username">
+                    <input class="form-control" type="text" placeholder="Password">
+                    <button type="button" href="#" class="btn btn-primary btn-lg col-md-4 col-md-offset-4">PayPal Login</button>
+                </form>
+            </div>
+
+            <div id="blk-3" class="col-md-12 toHide" style="display:none">
+                <form class="col-md-12">
+                    <input class="form-control" type="text" placeholder="Username">
+                    <input class="form-control" type="text" placeholder="Password">
+                    <button type="button" href="#" class="btn btn-primary btn-lg col-md-4 col-md-offset-4">AliPay Login</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- <div class="row">
             <h3 class="col-md-12">1 Delivery Address</h3>
             <form class="col-md-12">
                 <input class="form-control" type="text" placeholder="Full Name *">
@@ -313,9 +361,9 @@
                 <p>Saturday or Sunday between 8am and 5pm.</p>
             </div>
         </div>
-        <hr>
+        <hr> -->
 
-        <div class="row">
+        <!-- <div class="row">
             <h3 class="col-md-12">3 Select Payment Method</h3>
             <div class="radio col-md-12">
 
@@ -344,7 +392,7 @@
                 </form>
             </div>
         </div>
-        <hr>
+        <hr> -->
 
         <div class="row">
             <button type="button" href="#" class="btn btn-warning btn-lg submit-button col-md-offset-5">Submit My Order</button>
