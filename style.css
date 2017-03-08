@@ -3,36 +3,14 @@ body {
   color: #696868;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+h2 {
+  text-align: center;
 }
 
-li {
-    display: inline;
-    margin-right: 20px;
-    color: #66e6d9;
-}
 
-li a {
-  color: #66e6d9;
-}
-
-li a:hover {
-  color: #66e6d9;
-  text-decoration: underline;
-  /*border-bottom: 1px solid rgba(102,230,217);*/
-}
-
-li a:active {
-  color: #66e6d9;
-  text-decoration: underline;
-  /*border-bottom: 1px solid rgba(102,230,217);*/
-}
-
-.process {
-  color: #a19d9d;
+.img-process {
+  width: 40px;
+  height: 40px;
 }
 
 .col-form-label {
