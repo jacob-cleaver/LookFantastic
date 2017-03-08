@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  color: #696868;
+}
+
+h1 {
+  color: #a19d9d;
+  font-weight: lighter;
+}
+
+.col-form-label {
+  text-align: right;
+}
+
+.radio {
+  margin-left: 20px;
+}
+
+.manual-address {
+  text-decoration: underline;
+}
+
+.submit-button {
+  background: #e98e1f;
+}
+
+.submit-button:hover {
+  background: #d17f1b;
+}
+
+.tandc-pp:hover {
+  text-decoration: none;
+}
