@@ -3,9 +3,36 @@ body {
   color: #696868;
 }
 
-h1 {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+    color: #66e6d9;
+}
+
+li a {
+  color: #66e6d9;
+}
+
+li a:hover {
+  color: #66e6d9;
+  text-decoration: underline;
+  /*border-bottom: 1px solid rgba(102,230,217);*/
+}
+
+li a:active {
+  color: #66e6d9;
+  text-decoration: underline;
+  /*border-bottom: 1px solid rgba(102,230,217);*/
+}
+
+.process {
   color: #a19d9d;
-  font-weight: lighter;
 }
 
 .col-form-label {
@@ -27,9 +54,16 @@ h1 {
 .btn-checkout {
   border: 1px solid #66e6d9;
   background: #66e6d9;
-  min-height: 30px;
+  min-height: 40px;
+  min-width: 175px;
 }
 
 .btn-checkout:hover {
   background: #66e6d9;
+}
+
+.payment-methods {
+  background: #ddd;
+  border-radius: 4px;
+  padding: 50px;
 }
