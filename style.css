@@ -12,14 +12,6 @@ h1 {
   text-align: right;
 }
 
-.radio {
-  margin-left: 20px;
-}
-
-.manual-address {
-  text-decoration: underline;
-}
-
 .submit-button {
   background: #e98e1f;
 }
@@ -30,4 +22,14 @@ h1 {
 
 .tandc-pp:hover {
   text-decoration: none;
+}
+
+.btn-checkout {
+  border: 1px solid #66e6d9;
+  background: #66e6d9;
+  min-height: 30px;
+}
+
+.btn-checkout:hover {
+  background: #66e6d9;
 }
