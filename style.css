@@ -106,18 +106,18 @@ hr {
 }
 
 .credit-debit {
-  width: 300px;
-  height: 35px;
+  width: 650px;
+  height: auto;
 }
 
 .paypal {
-  width: 120px;
-  height: 35px;
+  width: auto;
+  height: 88px;
 }
 
 .alipay {
-  width: 95px;
-  height: 35px;
+  width: auto;
+  height: 88px;
 }
 
 @media (min-width: 992px) {
@@ -166,7 +166,8 @@ hr {
 
 @media (max-width: 991px) {
   .btn-checkout {
-    min-height: 80px;
+    min-height: 300px;
+    margin-top: 50px;
   }
 }
 .btn-checkout {
