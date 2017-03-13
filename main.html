@@ -26,26 +26,56 @@
         <div class="row">
             <div>
                 <progress class="col-md-6 col-md-offset-3 col-xs-12" value="50" max="100"></progress>
-                <!-- <img src="public/images/tick.png" class="img-process" alt="Deliery Completed">
-            <progress value="100" max="100"></progress>
-            <img src="public/images/2.png" class="img-process" alt="Payment">
-            <progress value="" max="100"></progress>
-            <img src="public/images/3.png" class="img-process" alt="Order Confirmation"> -->
             </div>
             <div>
                 <h2>Please choose a payment method</h2>
-                <button name="checkout" type="button" href="#checkout-cards" class="btn btn-checkout col-md-4 col-xs-12" value="cards">
+                <button name="checkout" type="button" href="#checkout-cards" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12" value="cards">
                   <img class="credit-debit" src="public/images/Credit-Debit-Cards.png" alt="Credit/Debit Cards" title="Accepted Credit/Debit Cards">
                 </button>
+
                 <div id="checkout-cards" class="hideCheckout" style="display:none">
                     <form>
-                        <input class="form-control" type="text" placeholder="XXXX - XXXX - XXXX - XXXX">
-                        <input class="form-control" type="text" placeholder="MM/YYYY">
-                        <input class="form-control" type="text" placeholder="MM/YYYY">
-                        <input class="form-control" type="text" placeholder="CVV">
+                        <label class="col-md-2 col-md-offset-3">Card Number*</label>
+                        <input class="form-control col-md-3 col-xs-12" type="text" placeholder="XXXX - XXXX - XXXX - XXXX"><br>
+
+                        <label class="col-md-2 col-md-offset-3">Name on Card*</label>
+                        <input class="form-control col-md-3 col-xs-12" type="text" placeholder="John Smith"><br>
+
+                        <label class="col-md-2 col-md-offset-3">Expiry Date*</label>
+                        <select class="form-control col-md-1 col-xs-6">
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+
+                        <select class="form-control col-md-1 col-xs-6">
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                        </select><br>
+
+                        <!-- <input class="form-control" type="text" placeholder="XXXX - XXXX - XXXX - XXXX"> -->
+                        <label class="col-md-2 col-md-offset-3">CVV*</label>
+                        <input class="form-control col-md-3 col-xs-12" type="text">
+                        <p class="col-md-offset-5">3 digits on the back of the card</p>
                     </form>
 
-                    <button name="checkout" type="button" href="#checkout-address" class="btn submit-button col-xs-12" value="address">Enter different address</button>
+                    <button name="checkout" type="button" href="#checkout-address" class="btn submit-button col-md-3 col-md-offset-3 col-xs-12" value="address">Use same address</button>
+                    <button name="checkout" type="button" href="#checkout-address" class="btn submit-button col-md-3 col-xs-12" value="address">Enter different address</button>
                     <div id="checkout-address" class="hideCheckout" style="display:none">
                         <form>
                             <input class="form-control" type="text" placeholder="Full Name *">
@@ -55,35 +85,28 @@
                             <input class="form-control" type="text" placeholder="County *">
                             <input class="form-control" type="text" placeholder="Post Code/Zip *">
                         </form>
-
-                        <button type="button" href="#" class="btn submit-button col-md-4 col-md-offset-4 col-xs-12">Submit My Order</button>
-                        <p style="text-align:center">By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
                     </div>
-                  </div>
+                </div>
 
-                    <button name="checkout" type="button" href="#checkout-paypal" class="btn btn-checkout col-md-4 col-xs-12" value="paypal">
+                <button name="checkout" type="button" href="#checkout-paypal" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12" value="paypal">
                   <img class="paypal" src="public/images/PayPal.png" alt="PayPay" title="Pay by PayPal" width="90px" height="25px">
                 </button>
-                    <div id="checkout-paypal" class="hideCheckout" style="display:none">
-                        <form>
-                            <p>Please note that using the PayPal checkout will attract a 1% surcharge to the cost of your order.</p>
-                            <input class="form-control" type="text" placeholder="Username">
-                            <input class="form-control" type="text" placeholder="Password">
-                            <button type="button" href="#" class="btn btn-payment-login btn-lg col-md-4 col-md-offset-4 col-xs-12">PayPal Login</button>
-                        </form>
-                    </div>
+                <div id="checkout-paypal" class="hideCheckout" style="display:none">
+                    <p style="text-align:center; color:#ddd">Please note that using the PayPal checkout will attract a 1% surcharge to the cost of your order.</p>
+                    <p style="text-align:center">You will be re-directed to PayPal.</p>
+                </div>
 
-                    <button name="checkout" type="button" href="#checkout-alipay" class="btn btn-checkout col-md-4 col-xs-12" value="alipay">
+                <button name="checkout" type="button" href="#checkout-alipay" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12" value="alipay">
                   <img class="alipay" src="public/images/AliPay.png" alt="AliPay" title="Pay by AliPay" width="75px" height="25px">
                 </button>
-                </div>
                 <div id="checkout-alipay" class="hideCheckout" style="display:none">
-                    <form>
-                        <input class="form-control" type="text" placeholder="Username">
-                        <input class="form-control" type="text" placeholder="Password">
-                        <button type="button" href="#" class="btn btn-payment-login btn-lg col-md-4 col-md-offset-4 col-xs-12">AliPay Login</button>
-                    </form>
+                    <p style="text-align:center">You will be re-directed to AliPay.</p>
                 </div>
+
+                <hr>
+
+                <button type="button" href="#" class="btn submit-button col-md-4 col-md-offset-4 col-xs-12">Submit My Order</button>
+                <p style="text-align:center">By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
             </div>
         </div>
 </body>
