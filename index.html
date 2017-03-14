@@ -29,7 +29,7 @@
             </div>
             <div>
                 <h2>Please choose a payment method</h2>
-                <button name="checkout" type="button" href="#checkout-cards" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12" value="cards">
+                <button id="credit-debit" onclick="activeCreditDebit()" name="checkout" type="button" href="#checkout-cards" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12 active" value="cards">
                   <img class="credit-debit" src="public/images/Credit-Debit-Cards.png" alt="Credit/Debit Cards" title="Accepted Credit/Debit Cards">
                 </button>
 
@@ -88,15 +88,16 @@
                     </div>
                 </div>
 
-                <button name="checkout" type="button" href="#checkout-paypal" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12" value="paypal">
+                <button id="paypal" onclick="activePayPal()" name="checkout" type="button" href="#checkout-paypal" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12" value="paypal">
                   <img class="paypal" src="public/images/PayPal.png" alt="PayPay" title="Pay by PayPal" width="90px" height="25px">
                 </button>
+
                 <div id="checkout-paypal" class="hideCheckout" style="display:none">
                     <p style="text-align:center; color:#ddd">Please note that using the PayPal checkout will attract a 1% surcharge to the cost of your order.</p>
                     <p style="text-align:center">You will be re-directed to PayPal.</p>
                 </div>
 
-                <button name="checkout" type="button" href="#checkout-alipay" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12" value="alipay">
+                <button id="alipay" onclick="activeAliPay()" name="checkout" type="button" href="#checkout-alipay" class="btn btn-checkout col-md-6 col-md-offset-3 col-xs-12" value="alipay">
                   <img class="alipay" src="public/images/AliPay.png" alt="AliPay" title="Pay by AliPay" width="75px" height="25px">
                 </button>
                 <div id="checkout-alipay" class="hideCheckout" style="display:none">
