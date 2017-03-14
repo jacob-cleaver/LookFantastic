@@ -214,6 +214,10 @@ label {
   background: #d17f1b;
 }
 
+.submit-button:active {
+  background: #d17f1b;
+}
+
 .tandc-pp:hover {
   text-decoration: none;
 }
@@ -234,13 +238,14 @@ label {
   background: #5bcfc3;
 }
 
-.btn-payment-login {
+
+/*.btn-payment-login {
   background: #00a0e9;
 }
 
 .btn-payment-login:hover {
   background: #0090d1;
-}
+}*/
 
 .payment-methods {
   background: #ddd;
