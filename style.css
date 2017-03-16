@@ -17,6 +17,10 @@ label {
   display: none;
 }
 
+p {
+  text-align: center;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -112,6 +116,10 @@ label {
     width: 91.666666666%;
   }
 
+  .col-md-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
   .col-md-offset-2 {
     margin-left: 16.666666667%;
   }
@@ -193,10 +201,6 @@ label {
   }
 }
 
-
-
-
-
 .img-process {
   width: 40px;
   height: 40px;
@@ -211,10 +215,6 @@ label {
 }
 
 .submit-button:hover {
-  background: #d17f1b;
-}
-
-.submit-button:active {
   background: #d17f1b;
 }
 
