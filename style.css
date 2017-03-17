@@ -66,6 +66,96 @@ p {
   width: 100%;
 }
 
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 6px 12px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-height: 42px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.form-control {
+  height: 35px;
+  padding: 6px 12px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4em;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+  transition: border-color ease-in-out .15s box-shadow ease-in-out .15s;
+}
+
+.credit-debit {
+  width: 650px;
+  height: auto;
+}
+
+.paypal {
+  width: auto;
+  height: 88px;
+}
+
+.alipay {
+  width: auto;
+  height: 88px;
+}
+
+.img-process {
+  width: 40px;
+  height: 40px;
+}
+
+.col-form-label {
+  text-align: right;
+}
+
+.submit-button {
+  background: #e98e1f;
+}
+
+.submit-button:hover {
+  background: #d17f1b;
+}
+
+.tandc-pp:hover {
+  text-decoration: none;
+}
+
+
+@media (max-width: 991px) {
+  .btn-checkout {
+    min-height: 300px;
+    margin-top: 50px;
+  }
+}
+.btn-checkout {
+  border: 1px solid #66e6d9;
+  background: #66e6d9;
+}
+
+.btn-checkout:hover {
+  background: #5bcfc3;
+}
+
+.payment-methods {
+  background: #ddd;
+  border-radius: 4px;
+  padding: 50px;
+}
+
 @media (min-width: 992px){
   label {
     display: inline-block;
@@ -135,55 +225,86 @@ p {
   .col-md-offset-5 {
     margin-left: 41.666666667%;
   }
-}
 
-.btn {
-  display: inline-block;
-  color: #fff;
-  padding: 6px 12px;
-  margin-top: 10px;
-  font-size: 14px;
-  text-align: center;
-  vertical-align: middle;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  min-height: 42px;
-}
+  .help-tip{
+  	text-align: center;
+  	background-color: #adadad;
+  	border-radius: 50%;
+  	width: 24px;
+  	height: 24px;
+  	font-size: 14px;
+  	line-height: 26px;
+  	cursor: pointer;
+  }
 
-.btn:focus {
-  outline: 0;
-}
+  .help-tip:before{
+  	content:'?';
+  	font-weight: bold;
+  	color:#fff;
+  }
 
-.form-control {
-  height: 35px;
-  padding: 6px 12px;
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.4em;
-  color: #555;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
-  transition: border-color ease-in-out .15s box-shadow ease-in-out .15s;
-}
+  .help-tip:hover p{
+  	display:block;
+  	transform-origin: 100% 0%;
 
-.credit-debit {
-  width: 650px;
-  height: auto;
-}
+  	-webkit-animation: fadeIn 0.3s ease-in-out;
+  	animation: fadeIn 0.3s ease-in-out;
 
-.paypal {
-  width: auto;
-  height: 88px;
-}
+  }
 
-.alipay {
-  width: auto;
-  height: 88px;
-}
+  .help-tip p{	/* The tooltip */
+  	display: none;
+  	text-align: left;
+  	background-color: #ababab;
+  	padding: 20px;
+  	position: absolute;
+  	border-radius: 4px;
+  	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  	color: #fff;
+  	font-size: 13px;
+  	line-height: 1.4;
+    width: 230px;
+  }
 
-@media (min-width: 992px) {
+  .help-tip p:before{ /* The pointer of the tooltip */
+  	position: absolute;
+  	content: '';
+  	width:0;
+  	height: 0;
+  	border:6px solid transparent;
+  	border-bottom-color:#ababab;
+  	top:-12px;
+    left: 6px;
+  }
+
+  .help-tip p:after{ /* Prevents the tooltip from being hidden */
+  	width:100%;
+  	height:40px;
+  	content:'';
+  	position: absolute;
+  	top:-40px;
+  	left:0;
+  }
+
+  /* CSS animation */
+
+  @-webkit-keyframes fadeIn {
+  	0% {
+  		opacity:0;
+  		transform: scale(0.6);
+  	}
+
+  	100% {
+  		opacity:100%;
+  		transform: scale(1);
+  	}
+  }
+
+  @keyframes fadeIn {
+  	0% { opacity:0; }
+  	100% { opacity:100%; }
+  }
+
   .credit-debit{
     margin-top: 5px;
     width: 150px;
@@ -201,54 +322,28 @@ p {
   }
 }
 
-.img-process {
-  width: 40px;
-  height: 40px;
-}
+@media (min-width: 992px) {
+    .form-control::-moz-placeholder {
+        color: white !important;
+        opacity: 1;
+    }
+    .form-control::-moz-placeholder {
+        color: white  !important;
+        opacity: 1;
+    }
+    *::-moz-placeholder {
+        color: white !important;
+    }
+    .::-webkit-input-placeholder {
+        color: white !important;
+        opacity: 1;
+    }
+    ::-webkit-input-placeholder {
+        color: white  !important;
+        opacity: 1;
+    }
+    *::-webkit-input-placeholder {
+        color: white !important;
+    }
 
-.col-form-label {
-  text-align: right;
-}
-
-.submit-button {
-  background: #e98e1f;
-}
-
-.submit-button:hover {
-  background: #d17f1b;
-}
-
-.tandc-pp:hover {
-  text-decoration: none;
-}
-
-
-@media (max-width: 991px) {
-  .btn-checkout {
-    min-height: 300px;
-    margin-top: 50px;
-  }
-}
-.btn-checkout {
-  border: 1px solid #66e6d9;
-  background: #66e6d9;
-}
-
-.btn-checkout:hover {
-  background: #5bcfc3;
-}
-
-
-/*.btn-payment-login {
-  background: #00a0e9;
-}
-
-.btn-payment-login:hover {
-  background: #0090d1;
-}*/
-
-.payment-methods {
-  background: #ddd;
-  border-radius: 4px;
-  padding: 50px;
 }
