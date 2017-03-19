@@ -51,11 +51,15 @@ p {
   margin-right: -15px;
 }
 
-.col-xs-6 .col-xs-12 .col-md-1 .col-md-2 .col-md-3 .col-md-4 .col-md-5 .col-md-6 .col-md-7 .col-md-8 .col-md-9 .col-md-10 .col-md-11 {
+.col-xs-4 .col-xs-6 .col-xs-12 .col-md-1 .col-md-2 .col-md-3 .col-md-4 .col-md-5 .col-md-6 .col-md-7 .col-md-8 .col-md-9 .col-md-10 .col-md-11 {
   float: left;
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col-xs-4 {
+  width: 32.95%;
 }
 
 .col-xs-6 {
@@ -64,6 +68,10 @@ p {
 
 .col-xs-12 {
   width: 100%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
 }
 
 .btn {
@@ -86,8 +94,8 @@ p {
 
 .form-control {
   height: 35px;
-  padding: 6px 12px;
   margin-top: 10px;
+  padding: 6px 12px;
   font-size: 14px;
   line-height: 1.4em;
   color: #555;
@@ -113,20 +121,15 @@ p {
   height: 88px;
 }
 
-.img-process {
-  width: 40px;
-  height: 40px;
-}
-
 .col-form-label {
   text-align: right;
 }
 
-.submit-button {
+.btn-submit {
   background: #e98e1f;
 }
 
-.submit-button:hover {
+.btn-submit:hover {
   background: #d17f1b;
 }
 
@@ -134,20 +137,15 @@ p {
   text-decoration: none;
 }
 
-
-@media (max-width: 991px) {
-  .btn-checkout {
-    min-height: 300px;
-    margin-top: 50px;
-  }
-}
 .btn-checkout {
-  border: 1px solid #66e6d9;
-  background: #66e6d9;
+  color: #fff;
+  background: #ababab;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 .btn-checkout:hover {
-  background: #5bcfc3;
+  background: #28bdb3 !important;
 }
 
 .payment-methods {
@@ -226,7 +224,7 @@ p {
     margin-left: 41.666666667%;
   }
 
-  .help-tip{
+  .help-tip {
   	text-align: center;
   	background-color: #adadad;
   	border-radius: 50%;
@@ -254,7 +252,7 @@ p {
 
   .help-tip p{	/* The tooltip */
   	display: none;
-  	text-align: left;
+  	text-align: center;
   	background-color: #ababab;
   	padding: 20px;
   	position: absolute;
@@ -320,30 +318,53 @@ p {
     width: 75px;
     height: 25px;
   }
+
+  .form-control::-moz-placeholder {
+      color: white !important;
+      opacity: 1;
+  }
+  .form-control::-moz-placeholder {
+      color: white  !important;
+      opacity: 1;
+  }
+  *::-moz-placeholder {
+      color: white !important;
+  }
+  .::-webkit-input-placeholder {
+      color: white !important;
+      opacity: 1;
+  }
+  ::-webkit-input-placeholder {
+      color: white  !important;
+      opacity: 1;
+  }
+  *::-webkit-input-placeholder {
+      color: white !important;
+  }
+
+  .logo {
+    margin-left: -10px;
+  }
 }
 
-@media (min-width: 992px) {
-    .form-control::-moz-placeholder {
-        color: white !important;
-        opacity: 1;
-    }
-    .form-control::-moz-placeholder {
-        color: white  !important;
-        opacity: 1;
-    }
-    *::-moz-placeholder {
-        color: white !important;
-    }
-    .::-webkit-input-placeholder {
-        color: white !important;
-        opacity: 1;
-    }
-    ::-webkit-input-placeholder {
-        color: white  !important;
-        opacity: 1;
-    }
-    *::-webkit-input-placeholder {
-        color: white !important;
-    }
+footer {
+  text-align: center;
+  padding: 50px;
+}
 
+@media (max-width: 991px) {
+  .form-control {
+    height: 65px;
+    font-size: 18px;
+  }
+
+  .btn-submit {
+    height: 65px;
+    font-size: 18px;
+  }
+
+  .btn-checkout {
+    height: 65px;
+    font-size: 18px;
+  }
 }
