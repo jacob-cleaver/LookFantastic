@@ -21,6 +21,10 @@ p {
   text-align: center;
 }
 
+input[type="radio"] {
+  margin-top: 15px;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -344,6 +348,10 @@ p {
 
   .logo {
     margin-left: -10px;
+  }
+
+  .btn-back {
+    display: none;
   }
 }
 
