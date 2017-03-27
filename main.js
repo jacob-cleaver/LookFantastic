@@ -12,3 +12,11 @@ for (i = 0; i < acc.length; i++) {
     }
   }
 }
+
+$(".toggle").click(function(){
+  $(".navcollaps").toggleClass("show");
+});
+
+document.getElementsByClassName('toggle').click(fucntion(){
+  document.getElementsByClassName('navcollaps').toggleClass("show");
+});

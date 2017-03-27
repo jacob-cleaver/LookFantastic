@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>GainX</title>
+    <title>GainX | Product Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Latest compiled and minified CSS -->
     <script src="https://use.fontawesome.com/81c9db3dcf.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="main.js"></script>
 
@@ -18,18 +20,18 @@
             <li class="col-xs-2">
                 <a class="fa fa-bars" aria-hidden="true" href="#"></a>
             </li>
-            <li class="col-xs-4 nav-border">
+            <li class="col-xs-4">
                 <a href="#"><img src="public/images/GainX.png" alt="GainX.com" width="120px" height="42px"></a>
-                <li>
-                    <li class="col-xs-2">
-                        <a class="fa fa-search" aria-hidden="true" href="#"></a>
-                    </li>
-                    <li class="col-xs-2 nav-border">
-                        <a class="fa fa-gbp" aria-hidden="true" href="#"></a>
-                    </li>
-                    <li class="col-xs-2">
-                        <a class="fa fa-shopping-basket" aria-hidden="true" href="#"></a>
-                    </li>
+            </li>
+            <li class="col-xs-2">
+                <a class="fa fa-search" aria-hidden="true" href="#"></a>
+            </li>
+            <li class="col-xs-2">
+                <a class="fa fa-gbp" aria-hidden="true" href="#"></a>
+            </li>
+            <li class="col-xs-2">
+                <a class="fa fa-shopping-basket" aria-hidden="true" href="#"></a>
+            </li>
         </ul>
     </nav>
 
@@ -37,120 +39,164 @@
         <p><strong>HUOM! KOKO MASS SARJA NYT HURJASSA</strong><br> ALESSA - SÄÄSTÄ JOPA 40% KOODILLA DOTW</p>
     </section>
 
+    <section id="delivery" class="col-xs-12 delivery">
+        <span><i class="fa fa-check-square-o"></i>Paras laatu</span>
+        <span><i class="fa fa-truck"></i>Ilmainen toimitus 50€ ostoksissa</span>
+        <span><i class="fa fa-arrow-circle-down"></i>Halvimmat hinnat</span>
+    </section>
+
     <section id="sale-banner" class="col-xs-12 sale-banner">
         <p><strong>HUOM! KOKO MASS SARJA NYT HURJASSA</strong><br> ALESSA - SÄÄSTÄ JOPA 40% KOODILLA DOTW</p>
     </section>
 
     <section id="product">
-        <div class="col-xs-12 product-title">
-            <p><strong>MASS ISOWHEY</strong></p>
+        <div class="col-xs-12 product-title-mobile">
+            <p><strong>MASS WHEY PROTEIN</strong></p>
         </div>
 
-        <div class="product">
+        <div class="col-xs-12 col-md-2 col-md-offset-1 product">
             <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="300px">
+            <span><i class="fa fa-search-plus"></i>Hover to enlarge</span>
         </div>
 
-        <div class="col-xs-12 product-price">
+        <div class="col-xs-12 col-md-2 product-price">
             <p class="price-rrp-saving">Oli <del>&pound;52.51</del> Säästä &pound;13.13</p>
             <p class="price">&pound;39.38</p>
             <p>&pound;0.98 / 100.0g</p>
-            <span class="fa fa-star rating"></span>
+            <i class="fa fa-star rating"></i>
             <p>Varastossa Lähetetään yleensä 24 tunnin sisällä</p>
         </div>
 
-        <div class="col-xs-12 order-form">
+        <div class="col-xs-12 col-md-4 col-md-offset-1 order-form">
+          <div class="col-md-12 product-title">
+            Mass Whey Protein<br>
+            <span class="fa fa-star rating"></span>
+            <hr>
+          </div>
             <form>
-                <select class="col-xs-12 form-control">
-          <option>Appelsiini Cream</option>
-          <option>Banaani</option>
-          <option>Mansikka</option>
-          <option>Maustamaton</option>
-          <option>Suklaa</option>
-          <option>Suklaa Banaani</option>
-          <option>Suklaa Maapähkinä</option>
-          <option>Suklaa Minttu</option>
-          <option>Vadelma</option>
-          <option>Vanilja</option>
-        <select>
+                <label class="col-md-4">Maku</label>
+                <select class="col-xs-12 col-md-8 form-control">
+                  <option>Appelsiini Cream</option>
+                  <option>Banaani</option>
+                  <option>Mansikka</option>
+                  <option>Maustamaton</option>
+                  <option>Suklaa</option>
+                  <option>Suklaa Banaani</option>
+                  <option>Suklaa Maapähkinä</option>
+                  <option>Suklaa Minttu</option>
+                  <option>Vadelma</option>
+                  <option>Vanilja</option>
+                <select><br>
 
-          <select class="col-xs-12 form-control">
-            <option>Pussi</option>
-            <option>Tuubi</option>
-          <select>
+              <label class="col-md-4">Pakkaus</label>
+              <select class="col-xs-12 col-md-8 form-control">
+                <option>Pussi</option>
+                <option>Tuubi</option>
+              <select><br>
 
-            <select class="col-xs-12 form-control">
-              <option>4 kg</option>
-            <select>
+              <label class="col-md-4">Määrä</label>
+                <select class="col-xs-12 col-md-8 form-control">
+                  <option>2 kg</option>
+                  <option>4 kg</option>
+                <select>
+              </select>
+            </form>
 
-              <select class="col-xs-12 form-control">
-                <option>Määrä: 1</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10+</option>
-              <select>
-      </form>
+            <button class="col-xs-12 btn btn-buy" type="submit"><span class="fa fa-shopping-basket"></span>Lisää ostoskoriin</button>
+            <button class="col-xs-12 btn btn-review" type="submit">Write a Review</button>
+        </div>
 
-      <button class="col-xs-12 btn btn-buy" type="submit"><span class="fa fa-shopping-basket"></span>Lisää ostoskoriin</button>
-      <button class="col-xs-12 btn btn-review" type="submit">Write a Review</button>
-    </div>
+        <section id="side-bar-products" class="col-md-2 col-md-offset-1 side-bar-products">
+            <div class="side-bar-title">Saatat myös pitää…</div>
+            <div>
+              <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="70px">
+                Mass Whey Protein
+                <span class="fa fa-star rating"></span>
+                &pound;39.38
+            </div>
+            <div>
+              <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="70px">
+                Mass Whey Protein
+                <span class="fa fa-star rating"></span>
+                &pound;39.38
+            </div>
+            <div>
+              <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="70px">
+                Mass Whey Protein
+                <span class="fa fa-star rating"></span>
+                &pound;39.38
+            </div>
+        </section>
 
-    <div class="col-xs-12 product-info">
-      <button class="accordion">Section 1</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+        <div class="col-xs-12 product-info">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
 
-      <button class="accordion">Section 2</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
 
-      <button class="accordion">Section 3</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="other-products">
-      <p><strong>Asiakkaat jotka ostivat tämän tuotteen ostivat myös:</strong></p>
-      <div class="col-xs-6 product">
-          <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="150px">
-          <p>Mass Whey Sample (28g)</p>
-          <span class="fa fa-star rating"></span>
-          <p>&pound;0.84</p>
-          <hr>
-          <p>-40% Koodi: DOTW</p>
-          <button class="col-xs-12 btn btn-buy" type="submit">Lisää infoa</button>
-      </div>
+    <section id="other-products" class="col-xs-12">
+        <p><strong>Asiakkaat jotka ostivat tämän tuotteen ostivat myös:</strong></p>
+        <div class="col-xs-6 product">
+            <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="150px">
+            <p>Mass Whey Sample (28g)</p>
+            <i class="fa fa-star rating"></i>
+            <p>&pound;0.84</p>
+            <hr>
+            <p>-40% Koodi: DOTW</p>
+            <button class="col-xs-12 btn btn-buy" type="submit">Lisää infoa</button>
+        </div>
 
-      <div class="col-xs-6 product">
-        <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="150px">
-        <p>Mass Whey Sample (50g)</p>
-        <p>&pound;0.98 / 100.0g</p>
-        <span class="fa fa-star rating"></span>
-        <button class="col-xs-12 btn btn-buy" type="submit">Lisää infoa</button>
-      </div>
+        <div class="col-xs-6 product">
+            <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="150px">
+            <p>Mass Whey Sample (50g)</p>
+            <i class="fa fa-star rating"></i>
+            <p>&pound;0.84</p>
+            <hr>
+            <p>-40% Koodi: DOTW</p>
+            <button class="col-xs-12 btn btn-buy" type="submit">Lisää infoa</button>
+        </div>
     </section>
 
-    <section id="sign-up" class="sign-up">
-      <h1>Recieve Exclusive Offers</h1>
-      <p>Sign up for discount codes, vouchers and all the latest news</p>
-      <form>
-        <input class="col-xs-10 form-control" placeholder="Enter email address here">
-        <button class="col-xs-1 btn btn-buy" type="submit">sign up</button>
+    <section id="sign-up" class="col-xs-12 sign-up">
+        <h1>Recieve Exclusive Offers</h1>
+        <p>Sign up for discount codes, vouchers and all the latest news</p>
+        <form>
+            <input class="col-xs-12 col-md-4 col-md-offset-3 form-control" placeholder="Enter email address here">
+            <button class="col-xs-12 col-md-2 btn btn-sign-up" type="submit">sign up</button>
     </section>
 
-    <footer>
-      &copy; 2017 GainX | Jacob Cleaver
+    <footer class="col-xs-12">
+        &copy; 2017 GainX | Jacob Cleaver
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
