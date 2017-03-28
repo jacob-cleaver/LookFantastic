@@ -13,6 +13,30 @@ hr {
   border-top: 1px solid #eee;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #28bdb3;
+    border-bottom: 2px solid #28bdb3;
+}
+
 label {
   display: none;
 }
@@ -24,6 +48,7 @@ p {
 input[type="radio"] {
   margin-top: 15px;
 }
+
 
 @media (min-width: 1200px) {
   .container {
@@ -60,6 +85,10 @@ input[type="radio"] {
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col-xs-4 {
+  width: 25%;
 }
 
 .col-xs-4 {
