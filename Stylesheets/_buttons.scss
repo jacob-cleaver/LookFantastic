@@ -1,0 +1,47 @@
+.btn {
+	color: #fff;
+	padding: 6px 12px;
+	margin-top: 10px;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	min-height: 42px;
+	&:hover {
+		color: #fff;
+	}
+	&:focus {
+		outline: 0;
+	}
+}
+.btn-add-to-cart {
+	background: #d81c25;
+	color: #fff;
+	&:hover {
+		background: #e64149;
+	}
+}
+.btn-review {
+	background: #fff;
+	color: #d81c25;
+	border: 1px solid #d81c25;
+	&:hover {
+		background: #d81c25;
+	}
+}
+.btn-sign-up {
+	background: #d81c25;
+	color: #fff;
+	&:hover {
+		background: #e64149;
+	}
+}
+@media (max-width: 991px) {
+	.btn-add-to-cart {
+		display: none;
+	}
+	.btn-review {
+		display: none;
+	}
+}
