@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>LookFabulous</title>
@@ -22,24 +22,31 @@
         <hr> Please provide your billing and delivery information below.<span style="float:right">* Indicates required field</span>
         <hr>
 
+        <div id="welcome"></div>
+
         <div class="row">
-            <div>
-                <progress class="col-md-6 col-md-offset-3 col-xs-12" value="50" max="100"></progress>
-            </div>
+            <section>
+                <ul>
+                    <li class="col-xs-3 col-md-2 col-md-offset-2"><a href="#details">1. Details</a></li>
+                    <li class="col-xs-3 col-md-2"><a href="#delivery">2. Delivery</a></li>
+                    <li class="col-xs-3 col-md-2"><a style="color:#28bdb3; border-bottom:2px solid #28bdb3" href="#payment">3. Payment</a></li>
+                    <li class="col-xs-3 col-md-2"><a href="#confirm">4. Confirm</a></li>
+                </ul>
+            </section>
 
             <div>
                 <h2>Please choose a payment method</h2>
-                    <button id="creditDebitCardsBtn" onclick="creditDebitCards()" type="button" href="#checkout-cards" class="btn btn-checkout col-xs-12 col-md-4">
+                <button id="creditDebitCardsBtn" onclick="creditDebitCards()" type="button" href="#checkout-cards" class="btn btn-checkout col-xs-12 col-md-4">
                   Credit/Debit Card
                   <!-- <img class="credit-debit" src="public/images/Credit-Debit-Cards.png" alt="Credit/Debit Cards" title="Accepted Credit/Debit Cards"> -->
                 </button>
 
-                    <button id="paypalBtn" onclick="payPal()" type="button" href="#checkout-paypal" class="btn btn-checkout col-xs-12 col-md-4">
+                <button id="paypalBtn" onclick="payPal()" type="button" href="#checkout-paypal" class="btn btn-checkout col-xs-12 col-md-4">
                   PayPal
                   <!-- <img class="paypal" src="public/images/PayPal.png" alt="PayPay" title="Pay by PayPal" width="90px" height="25px"> -->
                 </button>
 
-                    <button id="alipayBtn" onclick="aliPay()" type="button" href="#checkout-alipay" class="btn btn-checkout col-xs-12 col-md-4">
+                <button id="alipayBtn" onclick="aliPay()" type="button" href="#checkout-alipay" class="btn btn-checkout col-xs-12 col-md-4">
                   AliPay
                   <!-- <img class="alipay" src="public/images/AliPay.png" alt="AliPay" title="Pay by AliPay" width="75px" height="25px"> -->
                 </button>
@@ -92,8 +99,8 @@
                     </form>
 
                     <div class="col-xs-12 col-md-offset-3" style="margin-top:35px; margin-bottom:35px;">
-                      <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddressHide()" required checked>Use my delivery address as my cardholder address<br>
-                      <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddress()" required>Use a different address
+                        <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddressHide()" required checked>Use my delivery address as my cardholder address<br>
+                        <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddress()" required>Use a different address
                     </div>
 
                     <div id="newAddressForm" style="display:none">
@@ -124,25 +131,25 @@
                             </select>
                         </form>
                     </div>
-                  </div>
-
-                    <div id="payPal" style="display:none">
-                        <p style="color:#ddd">Please note that using the PayPal checkout will attract a 1% surcharge to the cost of your order.</p>
-                        <p>You will be re-directed to PayPal.</p>
-                    </div>
-
-                    <div id="aliPay" style="display:none">
-                        <p>You will be re-directed to AliPay.</p>
-                    </div>
-
-                    <hr>
-
-                    <button type="button" href="#" class="btn btn-submit col-md-4 col-md-offset-4 col-xs-12">Submit My Order</button>
-                    <button type="button" href="#" class="btn btn-back col-md-4 col-md-offset-4 col-xs-12">Back</button>
-                    <p>By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
                 </div>
+
+                <div id="payPal" style="display:none">
+                    <p style="color:#ddd">Please note that using the PayPal checkout will attract a 1% surcharge to the cost of your order.</p>
+                    <p>You will be re-directed to PayPal.</p>
+                </div>
+
+                <div id="aliPay" style="display:none">
+                    <p>You will be re-directed to AliPay.</p>
+                </div>
+
+                <hr>
+
+                <button type="button" href="#" class="btn btn-submit col-md-4 col-md-offset-4 col-xs-12">Submit My Order</button>
+                <button type="button" href="#" class="btn btn-back col-md-4 col-md-offset-4 col-xs-12">Back</button>
+                <p>By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
             </div>
         </div>
+    </div>
     </div>
 
     <footer>
