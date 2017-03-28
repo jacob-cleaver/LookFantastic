@@ -7,7 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <script src="https://use.fontawesome.com/81c9db3dcf.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Stylesheets/style.css">
     <script src="main.js"></script>
 
     <!-- Favicon -->
@@ -36,17 +36,17 @@
     </nav>
 
     <section id="breadcrumbs" class="col-xs-12 breadcrumbs">
-        <p><strong>HUOM! KOKO MASS SARJA NYT HURJASSA</strong><br> ALESSA - SÄÄSTÄ JOPA 40% KOODILLA DOTW</p>
+        <p><strong>HUOM! KOKO MASS SARJA NYT HURJASSA</strong><br> ALESSA - S&Auml;&Auml;ST&Auml; JOPA 40% KOODILLA DOTW</p>
     </section>
 
     <section id="delivery" class="col-xs-12 delivery">
-        <span><i class="fa fa-check-square-o"></i>Paras laatu</span>
-        <span><i class="fa fa-truck"></i>Ilmainen toimitus 50€ ostoksissa</span>
-        <span><i class="fa fa-arrow-circle-down"></i>Halvimmat hinnat</span>
+        <span><i class="fa fa-check-square-o"></i> Paras laatu</span>
+        <span><i class="fa fa-truck"></i> Ilmainen toimitus 50€ ostoksissa</span>
+        <span><i class="fa fa-arrow-circle-down"></i> Halvimmat hinnat</span>
     </section>
 
     <section id="sale-banner" class="col-xs-12 sale-banner">
-        <p><strong>HUOM! KOKO MASS SARJA NYT HURJASSA</strong><br> ALESSA - SÄÄSTÄ JOPA 40% KOODILLA DOTW</p>
+        <p><strong>HUOM! KOKO MASS SARJA NYT HURJASSA</strong><br> ALESSA - S&Auml;&Auml;ST&Auml; JOPA 40% KOODILLA DOTW</p>
     </section>
 
     <section id="product">
@@ -54,17 +54,24 @@
             <p><strong>MASS WHEY PROTEIN</strong></p>
         </div>
 
-        <div class="col-xs-12 col-md-2 col-md-offset-1 product">
+        <div id="product-image" class="col-xs-12 col-md-2 col-md-offset-1 product">
             <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="300px">
-            <span><i class="fa fa-search-plus"></i>Hover to enlarge</span>
+            <span id="click-to-enlarge"><i class="fa fa-search-plus"></i> Tarkastele suurempaa kuvaa</span>
         </div>
 
-        <div class="col-xs-12 col-md-2 product-price">
-            <p class="price-rrp-saving">Oli <del>&pound;52.51</del> Säästä &pound;13.13</p>
+        <div id="enlarge-image" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="500px">
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-2 product-price-mobile">
+            <p class="price-rrp-saving">Oli <del>&pound;52.51</del> S&auml;&auml;st&auml; &pound;13.13</p>
             <p class="price">&pound;39.38</p>
             <p>&pound;0.98 / 100.0g</p>
             <i class="fa fa-star rating"></i>
-            <p>Varastossa Lähetetään yleensä 24 tunnin sisällä</p>
+            <p>Varastossa L&auml;hetet&auml;&auml;n yleens&auml; 24 tunnin sis&auml;ll&auml;</p>
         </div>
 
         <div class="col-xs-12 col-md-4 col-md-offset-1 order-form">
@@ -82,7 +89,7 @@
                   <option>Maustamaton</option>
                   <option>Suklaa</option>
                   <option>Suklaa Banaani</option>
-                  <option>Suklaa Maapähkinä</option>
+                  <option>Suklaa Maap&auml;hkin&auml;</option>
                   <option>Suklaa Minttu</option>
                   <option>Vadelma</option>
                   <option>Vanilja</option>
@@ -94,7 +101,7 @@
                 <option>Tuubi</option>
               <select><br>
 
-              <label class="col-md-4">Määrä</label>
+              <label class="col-md-4">M&auml;&auml;r&auml;</label>
                 <select class="col-xs-12 col-md-8 form-control">
                   <option>2 kg</option>
                   <option>4 kg</option>
@@ -102,12 +109,27 @@
               </select>
             </form>
 
-            <button class="col-xs-12 btn btn-buy" type="submit"><span class="fa fa-shopping-basket"></span>Lisää ostoskoriin</button>
+            <button class="col-xs-12 btn btn-add-to-cart" type="submit"><span class="fa fa-shopping-basket"></span>Lis&auml;&auml; ostoskoriin</button>
             <button class="col-xs-12 btn btn-review" type="submit">Write a Review</button>
+
+            <div class="col-md-12 product-price">
+              <div class="col-md-4">
+                Oli: &pound;27.87<br>
+                &pound;22.78<br>
+                S&auml;&auml;st&auml;: &pound;5.09<br>
+              </div>
+              <div class="col-md-5">
+                <label class="col-md-9">Lukum&auml;&auml;r&auml;:</label>
+                <input class="col-md-3" placeholder="1"></input>
+              </div>
+              <div class="col-md-3">
+                  <button class="btn btn-buy" type="submit">OSTA</button>
+              </div>
+            </div>
         </div>
 
         <section id="side-bar-products" class="col-md-2 col-md-offset-1 side-bar-products">
-            <div class="side-bar-title">Saatat myös pitää…</div>
+            <div class="side-bar-title">Saatat my&ouml;s pit&auml;&auml;…</div>
             <div>
               <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="70px">
                 Mass Whey Protein
@@ -147,7 +169,7 @@
     </section>
 
     <section id="other-products" class="col-xs-12">
-        <p><strong>Asiakkaat jotka ostivat tämän tuotteen ostivat myös:</strong></p>
+        <p><strong>Asiakkaat jotka ostivat t&auml;m&auml;n tuotteen ostivat my&ouml;s:</strong></p>
         <div class="col-xs-6 product">
             <img src="public/images/gainx-protein.jpg" alt="GainX Whey Protein" height="150px">
             <p>Mass Whey Sample (28g)</p>
@@ -155,7 +177,7 @@
             <p>&pound;0.84</p>
             <hr>
             <p>-40% Koodi: DOTW</p>
-            <button class="col-xs-12 btn btn-buy" type="submit">Lisää infoa</button>
+            <button class="col-xs-12 btn btn-add-to-cart" type="submit">Lis&auml;&auml; infoa</button>
         </div>
 
         <div class="col-xs-6 product">
@@ -165,7 +187,7 @@
             <p>&pound;0.84</p>
             <hr>
             <p>-40% Koodi: DOTW</p>
-            <button class="col-xs-12 btn btn-buy" type="submit">Lisää infoa</button>
+            <button class="col-xs-12 btn btn-add-to-cart" type="submit">Lis&auml;&auml; infoa</button>
         </div>
     </section>
 
@@ -197,6 +219,33 @@
             }
         }
     </script>
+
+    <script>
+    // Get the modal
+var modal = document.getElementById('enlarge-image');
+
+// Get the button that opens the modal
+var btn = document.getElementById("product-image");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}</script>
 </body>
 
 </html>
