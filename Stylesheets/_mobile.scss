@@ -1,0 +1,41 @@
+.product-title-mobile {
+	background-color: #1b1b1b;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+.product-price-mobile {
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-size: 12px;
+	.price {
+		color: #555;
+		font-size: 1.75em;
+		font-weight: 700;
+	}
+}
+.breadcrumbs {
+	color: #d81c25;
+	font-size: 12px;
+	text-align: center;
+	min-height: 55px;
+	padding-top: 10px;
+}
+.price-rrp-mobile {
+	font-size: 1.35em;
+	font-weight: 700;
+}
+@media (min-width: 992px) {
+	.breadcrumbs {
+		display: none;
+	}
+	.product-title-mobile {
+		display: none;
+	}
+	.product-price-mobile {
+		display: none;
+	}
+}

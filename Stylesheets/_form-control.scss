@@ -1,0 +1,27 @@
+.form-control {
+	height: 42px;
+	padding: 6px 12px;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+	transition: border-color ease-in-out .15s box-shadow ease-in-out .15s;
+	&:hover {
+		border: 1px solid #777;
+	}
+}
+@media (min-width: 992px) {
+	.form-control::-moz-placeholder {
+		color: white !important;
+		opacity: 1;
+}
+	.sign-up {
+		.form-control {
+			border-radius: 0;
+		}
+	}
+}
