@@ -1,0 +1,49 @@
+@import "variables";
+.form-control {
+	height: 35px;
+	margin-top: 10px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+	transition: border-color ease-in-out .15s box-shadow ease-in-out .15s;
+}
+.col-form-label {
+	text-align: right;
+}
+@media (min-width: 992px) {
+	.form-control {
+		&::-moz-placeholder {
+			color: white !important;
+			opacity: 1;
+			color: white !important;
+			opacity: 1;
+		}
+	}
+	* {
+		&::-moz-placeholder {
+			color: white !important;
+		}
+		&::-webkit-input-placeholder {
+			color: white !important;
+		}
+		&::-webkit-input-placeholder {
+			color: white !important;
+			opacity: 1;
+		}
+	&::-webkit-input-placeholder {
+		color: white !important;
+		opacity: 1;
+	}
+}
+}
+@media (max-width: 991px) {
+	.form-control {
+		height: 65px;
+		font-size: 18px;
+	}
+}

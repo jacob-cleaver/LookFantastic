@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>LookFabulous</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Stylesheets/style.css">
     <script type="text/javascript" src="javascript/main.js"></script>
-
+    <?php $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip=193.62.7.226'));
+          $country = $geo['geoplugin_countryName'];
+          $price = 5.99; //In $Dollars
+          $convertion = $geo['geoplugin_currencyConverter'];
+          $converted_price = $price * $convertion;
+          $converted_price_formatted = number_format($converted_price, 2, '.', '');
+    ?>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="public/images/lf-logo.png">
@@ -21,7 +26,7 @@
         </header>
         <hr> Please provide your billing and delivery information below.<span style="float:right">* Indicates required field</span>
         <hr>
-        
+
         <div class="row">
             <section>
                 <ul>
@@ -30,6 +35,26 @@
                     <li class="col-xs-3 col-md-2"><a style="color:#28bdb3; border-bottom:2px solid #28bdb3" href="#payment">3. Payment</a></li>
                     <li class="col-xs-3 col-md-2"><a href="#confirm">4. Confirm</a></li>
                 </ul>
+            </section>
+
+            <section id="basket">
+              <div id="prices">
+                <?php
+                if ($country == "United Kingdom") {
+                  echo '<p>&pound'.$converted_price_formatted.'</p>';
+                }
+                elseif ($country == "Austrailia" or $country == "United States") {
+                  echo '<p>$'.$price.'</p>';
+                }
+
+                elseif ($country == "Turkey") {
+                  echo '<p>&#8356;'.$converted_price_formatted.'</p>';
+                }
+
+                else {
+                  echo '<p>&euro;'.$converted_price_formatted.'</p>';
+                }?>
+              </div>
             </section>
 
             <div>
@@ -113,19 +138,44 @@
                             <input class="form-control col-md-3 col-xs-12" type="text" placeholder="Address Line 2 - optional"><br>
 
                             <label class="col-md-2 col-md-offset-3">City/Town*</label>
-                            <input class="form-control col-md-3 col-xs-12" type="text" placeholder="City/Town*"><br>
+                            <input class="form-control col-md-3 col-xs-12" type="text" placeholder="City*"><br>
 
-                            <label class="col-md-2 col-md-offset-3">County/State*</label>
-                            <input class="form-control col-md-3 col-xs-12" type="text" placeholder="County/State*"><br>
+                            <?php
+                              if ($country == "United Kingdom") {
+                                echo '<label class="col-md-2 col-md-offset-3">County*</label>';
+                                echo '<input class="form-control col-md-3 col-xs-12" type="text" placeholder="County*"><br>';
+                              }
 
-                            <label class="col-md-2 col-md-offset-3">Post Code/Zip*</label>
-                            <input class="form-control col-md-3 col-xs-12" type="text" placeholder="Post Code/Zip*"><br>
+                              else {
+                                echo '<label class="col-md-2 col-md-offset-3">State*</label>';
+                                echo '<input class="form-control col-md-3 col-xs-12" type="text" placeholder="State*"><br>';
+                              }
+                            ?>
+
+                            <?php
+                              if ($country == "United Kingdom") {
+                                echo '<label class="col-md-2 col-md-offset-3">Post Code*</label>';
+                                echo '<input class="form-control col-md-3 col-xs-12" type="text" placeholder="Post Code*"><br>';
+                              }
+
+                              else {
+                                echo '<label class="col-md-2 col-md-offset-3">Zip Code*</label>';
+                                echo '<input class="form-control col-md-3 col-xs-12" type="text" placeholder="Zip Code*"><br>';
+                              }
+                            ?>
 
                             <label class="col-md-2 col-md-offset-3">Country*</label>
                             <select class="form-control col-md-3 col-xs-12">
                                 <option value disabled>Please choose a country</option>
-                                <option selected>United Kingdom</option>
+                                <?php
+                                  if ($country == "United Kingdom"){
+                                  echo '<option class="selected" selected>United Kingdom</option>';
+                                }
+                                  elseif ($country == "United States"){
+                                  echo '<option selected>United States</option><hr>';}
+                                ?>
                                 <option>United States</option>
+                                <option>United Kingdom</option>
                             </select>
                         </form>
                     </div>

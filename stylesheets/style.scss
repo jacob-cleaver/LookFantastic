@@ -1,0 +1,112 @@
+@import "variables";
+@import "grid";
+@import "buttons";
+@import "form-control";
+@import "help-tip";
+/*@-webkit-keyframes fadeIn {
+  	0% {
+  		opacity:0;
+  		transform: scale(0.6);
+  	}
+
+  	100% {
+  		opacity:100%;
+  		transform: scale(1);
+  	}
+  }
+
+  @keyframes fadeIn {
+  	0% { opacity:0; }
+  	100% { opacity:100%; }
+  }*/
+/*.credit-debit{
+    margin-top: 5px;
+    width: 150px;
+    height: 20px;
+  }
+
+  .paypal {
+    width: 90px;
+    height: 25px;
+  }
+
+  .alipay {
+    width: 75px;
+    height: 25px;
+  }*/
+body {
+	font-family: sans-serif;
+	color: #696868;
+}
+h2 {
+	text-align: center;
+}
+hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-top: 1px solid;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+li {
+	float: left;
+	a {
+		display: block;
+		color: #777;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		&:hover {
+			color: #28bdb3;
+			border-bottom: 2px solid #28bdb3;
+		}
+	}
+}
+label {
+	display: none;
+}
+p {
+	text-align: center;
+}
+input[type="radio"] {
+	margin-top: 15px;
+}
+.credit-debit {
+	width: 650px;
+	height: auto;
+}
+.paypal {
+	width: auto;
+	height: 88px;
+}
+.alipay {
+	width: auto;
+	height: 88px;
+}
+.tandc-pp {
+	&:hover {
+		text-decoration: none;
+	}
+}
+.payment-methods {
+	background: #ddd;
+	border-radius: 4px;
+	padding: 50px;
+}
+footer {
+	text-align: center;
+	padding: 50px;
+}
+@media (min-width: 992px) {
+	label {
+		display: inline-block;
+		text-align: right;
+	}
+	.logo {
+		margin-left: -10px;
+	}
+}
