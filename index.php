@@ -21,9 +21,7 @@
         </header>
         <hr> Please provide your billing and delivery information below.<span style="float:right">* Indicates required field</span>
         <hr>
-
-        <div id="welcome"></div>
-
+        
         <div class="row">
             <section>
                 <ul>
