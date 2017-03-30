@@ -16,6 +16,7 @@
 		}
 		&:hover {
 			p {
+				background-color: #777;
 				display: block;
 				transform-origin: 100% 0%;
 				-webkit-animation: fadeIn 0.3s ease-in-out;
@@ -25,7 +26,7 @@
 		p {
 			display: none;
 			text-align: center;
-			background-color: #ababab;
+			background-color: #777;;
 			padding: 20px;
 			position: absolute;
 			border-radius: 4px;
@@ -42,7 +43,7 @@
 				width: 0;
 				height: 0;
 				border: 6px solid transparent;
-				border-bottom-color: #ababab;
+				border-bottom-color: #777;;
 				top: 20px;
 		    left: -12px;
 		    -webkit-transform: rotate(270deg);

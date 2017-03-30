@@ -7,12 +7,18 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <script type="text/javascript" src="javascript/main.js"></script>
-    <?php $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip=193.62.7.226'));
+    <?php $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='. $_SERVER["REMOTE_ADDR"]));
           $country = $geo['geoplugin_countryName'];
-          $price = 5.99; //In $Dollars
+          $price = 7.2993964113; //In $Dollars
+          $delivery = 4.862202284; //In $Dollars
+          $totalPrice = 12.1615986953; //In $Dollars
           $convertion = $geo['geoplugin_currencyConverter'];
           $converted_price = $price * $convertion;
+          $converted_delivery = $delivery * $convertion;
+          $converted_totalPrice = $totalPrice * $convertion;
           $converted_price_formatted = number_format($converted_price, 2, '.', '');
+          $converted_delivery_formatted = number_format($converted_delivery, 2, '.', '');
+          $converted_totalPrice_formatted = number_format($converted_totalPrice, 2, '.', '');
     ?>
 
     <!-- Favicon -->
@@ -31,7 +37,6 @@
         <hr> Please provide your billing and delivery information below.<span style="float:right">* Indicates required field</span><hr>
       </div>
 
-        <div class="row">
             <section>
                 <ul class="col-xs-8 col-xs-offset-2">
                     <li><a href="#details">1. Details</a></li>
@@ -42,26 +47,71 @@
             </section>
 
             <section id="cart">
-              <div class="cart">
-                <div class="cart-header">
-                  Shopping Cart
+              <div class="cart col-xs-12">
+                <div class="cart-header col-xs-12">
+                  Your Order Summary
                 </div>
-                <?php
-                if ($country == "United Kingdom") {
-                  echo '<p>&pound'.$converted_price_formatted.'</p>';
-                }
-                elseif ($country == "Austrailia" or $country == "United States") {
-                  echo '<p>$'.$price.'</p>';
-                }
-
-                elseif ($country == "Turkey") {
-                  echo '<p>&#8356;'.$converted_price_formatted.'</p>';
-                }
-
-                else {
-                  echo '<p>&euro;'.$converted_price_formatted.'</p>';
-                }?>
+                <div class="col-sm-2 col-md-2">
+                <img src="public/images/bulldog-moisturiser.png" alt="Bulldog Original Moisturiser" width="100px">
               </div>
+              <div class="col-xs-6 cart-info">
+                <p>1 x Bulldog Original Moisturiser (100ml) - Men's Skin Care Product</p>
+              </div>
+                  <div class="col-xs-11 col-sm-3 col-sm-offset-8 cart-price">
+                  Price:
+                    <?php
+                    if ($country == "United Kingdom") {
+                      echo '&pound'.$converted_price_formatted;
+                    }
+                    elseif ($country == "Austrailia" or $country == "United States") {
+                      echo '$'.$price;
+                    }
+
+                    elseif ($country == "Turkey") {
+                      echo '&#8356;'.$converted_price_formatted;
+                    }
+
+                    else {
+                      echo '&euro;'.$converted_price_formatted;
+                    }?>
+                  </div>
+                  <div class="col-xs-11 col-sm-3 col-sm-offset-8 cart-delivery">
+                    Delivery:
+                    <?php
+                    if ($country == "United Kingdom") {
+                      echo '&pound'.$converted_delivery_formatted;
+                    }
+                    elseif ($country == "Austrailia" or $country == "United States") {
+                      echo '$'.$delivery;
+                    }
+
+                    elseif ($country == "Turkey") {
+                      echo '&#8356;'.$converted_delivery_formatted;
+                    }
+
+                    else {
+                      echo '&euro;'.$converted_delivery_formatted;
+                    }?>
+                  </div>
+                  <div class="col-xs-11 col-sm-9 col-sm-offset-2 col-md-9 col-md-offset-2 cart-total-price">
+                    Total Price:
+                    <?php
+                    if ($country == "United Kingdom") {
+                      echo '&pound'.$converted_totalPrice_formatted;
+                    }
+                    elseif ($country == "Austrailia" or $country == "United States") {
+                      echo '$'.$totalPrice;
+                    }
+
+                    elseif ($country == "Turkey") {
+                      echo '&#8356;'.$converted_totalPrice_formatted;
+                    }
+
+                    else {
+                      echo '&euro;'.$converted_totalPrice_formatted;
+                    }?>
+                  </div>
+                </div>
             </section>
 
             <div>
@@ -143,7 +193,7 @@
                             <label class="col-md-2 col-md-offset-3">Address Line 2</label>
                             <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Address Line 2 - optional"><br>
 
-                            <label class="col-md-2 col-md-offset-3">City/Town*</label>
+                            <label class="col-md-2 col-md-offset-3">City*</label>
                             <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="City*"><br>
 
                             <?php

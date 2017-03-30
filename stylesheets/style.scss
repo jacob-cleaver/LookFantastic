@@ -29,6 +29,7 @@
 body {
     font-family: sans-serif;
     color: #696868;
+    font-weight: 200;
 }
 
 h2 {
@@ -92,18 +93,63 @@ input[type="radio"] {
 .cart {
     border: 1px solid #eee;
     border-radius: 4px;
-    margin: 50px;
+    min-height: 200px;
+    width: 96%;
+    margin-top: 50px;
 }
 
 .cart-header {
     background: #28bdb3;
     color: #fff;
-    height: 42px;
     font-size: 20px;
     line-height: 2.2;
     text-align: center;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
+    margin-left: -15px;
+}
+
+
+@media (max-width: 767px) {
+  .cart {
+    img {
+    display: none;
+  }
+  }
+}
+
+.cart-info {
+  padding: 20px;
+  float: left;
+}
+.cart-price {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.cart-delivery {
+  padding: 15px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+
+.cart-total-price {
+  padding-top: 15px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 20px;
+  border-top: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+  .cart {
+    img {
+    display: block;
+    margin-left: -15px;
+    float: left;
+    padding-top: 15px;
+  }
+  }
 }
 
 .tandc-pp {
