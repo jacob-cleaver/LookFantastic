@@ -44,14 +44,14 @@ hr {
 }
 
 ul {
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
+    text-align: center;
 li {
-    float: left;
+    display: inline-block;
 
     a {
         display: block;
@@ -66,10 +66,67 @@ li {
         }
     }
 }
+}
+.progress {
+  display: none;
+}
 @media (max-width: 991px) {
     label {
         display: none;
     }
+}
+
+@media (max-width: 767px){
+.progress {
+  display: block;
+  color: #b1b1b1;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: -35px;
+  font-weight: 700;
+}
+.progress-1, .progress-2 {
+  display: inline-block;
+  background: #777;
+  color: #fff;
+  border: 2px solid #777;
+  border-radius: 50%;
+  width: 30px;
+  height: 25px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.progress-3 {
+  display: inline-block;
+  background: #28bdb3;
+  color: #fff;
+  border: 2px solid #28bdb3;
+  border-radius: 50%;
+  width: 30px;
+  height: 25px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.progress-4 {
+  display: inline-block;
+  background: #b1b1b1;
+  color: #777;
+  border: 2px solid #b1b1b1;
+  border-radius: 50%;
+  width: 30px;
+  height: 25px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ul {
+  display: none;
+}
 }
 
 .payment-methods {
@@ -94,8 +151,8 @@ input[type="radio"] {
     border: 1px solid #eee;
     border-radius: 4px;
     min-height: 200px;
-    width: 96%;
     margin-top: 50px;
+    font-size: 14px;
 }
 
 .cart-header {
@@ -137,7 +194,7 @@ input[type="radio"] {
   padding-top: 15px;
   text-align: right;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   border-top: 1px solid #eee;
 }
 
@@ -149,6 +206,15 @@ input[type="radio"] {
     float: left;
     padding-top: 15px;
   }
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 20px;
+  }
+  .cart-total-price {
+    font-size: 14px;
   }
 }
 

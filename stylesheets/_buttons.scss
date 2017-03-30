@@ -41,6 +41,12 @@
 	}
 	.btn-back {
 		display: block;
+		background: #ccc;
+		color: #777;
+		&:hover {
+			background: #a2a2a2;
+			color: #fff;
+		}
 	}
 }
 @media (min-width: 992px) {

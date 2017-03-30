@@ -44,10 +44,17 @@
                     <li><a style="color:#28bdb3; border-bottom:2px solid #28bdb3" href="#payment">3. Payment</a></li>
                     <li><a href="#confirm">4. Confirm</a></li>
                 </ul>
+
+                <div class="progress">
+                  <p class="progress-1">1</p>
+                  <p class="progress-2">2</p>
+                  <p class="progress-3">3</p>
+                  <p class="progress-4">4</p>
+                </div>
             </section>
 
             <section id="cart">
-              <div class="cart col-xs-12">
+              <div class="cart col-xs-10 col-xs-offset-1">
                 <div class="cart-header col-xs-12">
                   Your Order Summary
                 </div>
