@@ -90,12 +90,12 @@ footer {
 	text-align: center;
 	padding: 50px;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
 	.product {
 		border: 1px solid #dcdcdc;
 	}
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	.delivery {
 		display: block;
 		background: #4d4b4b;
@@ -141,6 +141,7 @@ footer {
 		display: block;
 		font-weight: bold;
 		font-size: 20px;
+		margin-top: 50px;
 	}
 
 	.product-price {
@@ -166,15 +167,14 @@ footer {
 		}
 
 		label {
-			text-align: left;
+			text-align: center;
 			padding-left: 0;
 			color: #728391;
 			font-weight: 100;
-			margin-top: 35px;
+			margin-top: 10px;
 		}
 
 		input {
-			margin-top: 25px;
 			padding: 0;
 			min-height: 42px;
 			text-align: center;
