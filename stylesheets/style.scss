@@ -3,23 +3,8 @@
 @import "buttons";
 @import "form-control";
 @import "help-tip";
-/*@-webkit-keyframes fadeIn {
-  	0% {
-  		opacity:0;
-  		transform: scale(0.6);
-  	}
 
-  	100% {
-  		opacity:100%;
-  		transform: scale(1);
-  	}
-  }
-
-  @keyframes fadeIn {
-  	0% { opacity:0; }
-  	100% { opacity:100%; }
-  }*/
-/*.credit-debit{
+.credit-debit{
     margin-top: 5px;
     width: 150px;
     height: 20px;
@@ -33,7 +18,7 @@
   .alipay {
     width: 75px;
     height: 25px;
-  }*/
+  }
 body {
 	font-family: sans-serif;
 	color: #696868;
@@ -42,6 +27,7 @@ h2 {
 	text-align: center;
 }
 hr {
+  color: #eee;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	border-top: 1px solid;
@@ -75,6 +61,30 @@ p {
 input[type="radio"] {
 	margin-top: 15px;
 }
+.required {
+  margin-top: -40px;
+}
+@media (max-width: 991px){
+.required {
+  display: none;
+}
+}
+.cart {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin: 50px;
+}
+
+.cart-header {
+  background: #28bdb3;
+  color: #fff;
+  height: 42px;
+  font-size: 20px;
+  line-height: 2.2;
+  text-align: center;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
 .credit-debit {
 	width: 650px;
 	height: auto;
@@ -88,6 +98,8 @@ input[type="radio"] {
 	height: 88px;
 }
 .tandc-pp {
+  color: #b1b1b1;
+  cursor: pointer;
 	&:hover {
 		text-decoration: none;
 	}
@@ -100,6 +112,7 @@ input[type="radio"] {
 footer {
 	text-align: center;
 	padding: 50px;
+  color: #b1b1b1;
 }
 @media (min-width: 992px) {
 	label {

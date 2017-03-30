@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" href="Stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <script type="text/javascript" src="javascript/main.js"></script>
     <?php $geo = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip=193.62.7.226'));
           $country = $geo['geoplugin_countryName'];
@@ -24,21 +24,25 @@
         <header>
             <a href="#"><img class="col-xs-6 col-xs-offset-3 col-md-4 logo" src="public/images/LookFabulous.png" alt="Lookfabulous.com" width="260px"></a>
         </header>
-        <hr> Please provide your billing and delivery information below.<span style="float:right">* Indicates required field</span>
-        <hr>
+        <div class="required">
+        <hr> Please provide your billing and delivery information below.<span style="float:right">* Indicates required field</span><hr>
+      </div>
 
         <div class="row">
             <section>
-                <ul>
-                    <li class="col-xs-3 col-md-2 col-md-offset-2"><a href="#details">1. Details</a></li>
-                    <li class="col-xs-3 col-md-2"><a href="#delivery">2. Delivery</a></li>
-                    <li class="col-xs-3 col-md-2"><a style="color:#28bdb3; border-bottom:2px solid #28bdb3" href="#payment">3. Payment</a></li>
-                    <li class="col-xs-3 col-md-2"><a href="#confirm">4. Confirm</a></li>
+                <ul class="col-xs-8 col-xs-offset-2">
+                    <li><a href="#details">1. Details</a></li>
+                    <li><a href="#delivery">2. Delivery</a></li>
+                    <li><a style="color:#28bdb3; border-bottom:2px solid #28bdb3" href="#payment">3. Payment</a></li>
+                    <li><a href="#confirm">4. Confirm</a></li>
                 </ul>
             </section>
 
-            <section id="basket">
-              <div id="prices">
+            <section id="cart">
+              <div class="cart">
+                <div class="cart-header">
+                  Shopping Cart
+                </div>
                 <?php
                 if ($country == "United Kingdom") {
                   echo '<p>&pound'.$converted_price_formatted.'</p>';
@@ -194,7 +198,7 @@
 
                 <button type="button" href="#" class="btn btn-submit col-md-4 col-md-offset-4 col-xs-12">Submit My Order</button>
                 <button type="button" href="#" class="btn btn-back col-md-4 col-md-offset-4 col-xs-12">Back</button>
-                <p>By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
+                <p style="margin-top: 40px">By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
             </div>
         </div>
     </div>
