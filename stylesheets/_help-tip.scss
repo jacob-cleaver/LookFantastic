@@ -5,6 +5,7 @@
 		border-radius: 50%;
 		width: 24px;
 		height: 24px;
+		margin-left: 10px;
 		font-size: 14px;
 		line-height: 26px;
 		cursor: help;
@@ -33,6 +34,8 @@
 			font-size: 13px;
 			line-height: 1.4;
 			width: 230px;
+			margin-top: -40px;
+			margin-left: 40px;
 			&:before {
 				position: absolute;
 				content: '';

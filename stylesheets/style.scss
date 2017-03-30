@@ -4,122 +4,163 @@
 @import "form-control";
 @import "help-tip";
 
-.credit-debit{
+.credit-debit {
     margin-top: 5px;
     width: 150px;
     height: 20px;
-  }
+    width: 650px;
+    height: auto;
+}
 
-  .paypal {
+.paypal {
     width: 90px;
     height: 25px;
-  }
+    width: auto;
+    height: 88px;
+}
 
-  .alipay {
+.alipay {
     width: 75px;
     height: 25px;
-  }
+    width: auto;
+    height: 88px;
+}
+
 body {
-	font-family: sans-serif;
-	color: #696868;
+    font-family: sans-serif;
+    color: #696868;
 }
+
 h2 {
-	text-align: center;
+    text-align: center;
 }
+
 hr {
-  color: #eee;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	border-top: 1px solid;
+    color: #eee;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid;
 }
+
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
 li {
-	float: left;
-	a {
-		display: block;
-		color: #777;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		&:hover {
-			color: #28bdb3;
-			border-bottom: 2px solid #28bdb3;
-		}
-	}
+    float: left;
+
+    a {
+        display: block;
+        color: #777;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+        &:hover {
+            color: #28bdb3;
+            border-bottom: 2px solid #28bdb3;
+        }
+    }
 }
-label {
-	display: none;
+@media (max-width: 991px) {
+    label {
+        display: none;
+    }
 }
+
+.payment-methods {
+    background: #ddd;
+    border-radius: 4px;
+    padding: 50px;
+}
+
 p {
-	text-align: center;
+    text-align: center;
 }
+
 input[type="radio"] {
-	margin-top: 15px;
+    margin-top: 15px;
 }
+
 .required {
-  margin-top: -40px;
+    margin-top: -40px;
 }
-@media (max-width: 991px){
-.required {
-  display: none;
-}
-}
+
 .cart {
-  border: 1px solid #eee;
-  border-radius: 4px;
-  margin: 50px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 50px;
 }
 
 .cart-header {
-  background: #28bdb3;
-  color: #fff;
-  height: 42px;
-  font-size: 20px;
-  line-height: 2.2;
-  text-align: center;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+    background: #28bdb3;
+    color: #fff;
+    height: 42px;
+    font-size: 20px;
+    line-height: 2.2;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
-.credit-debit {
-	width: 650px;
-	height: auto;
-}
-.paypal {
-	width: auto;
-	height: 88px;
-}
-.alipay {
-	width: auto;
-	height: 88px;
-}
+
 .tandc-pp {
-  color: #b1b1b1;
-  cursor: pointer;
-	&:hover {
-		text-decoration: none;
-	}
+    color: #b1b1b1;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
-.payment-methods {
-	background: #ddd;
-	border-radius: 4px;
-	padding: 50px;
-}
+
 footer {
-	text-align: center;
-	padding: 50px;
-  color: #b1b1b1;
+    text-align: center;
+    padding: 50px;
+    color: #b1b1b1;
+}
+@media (max-width: 991px) {
+    hr {
+        width: 80%;
+    }
+
+    .required {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        margin-bottom: 20px;
+
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+@media (max-width: 767px) {
+  .logo-mobile {
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
 }
 @media (min-width: 992px) {
-	label {
-		display: inline-block;
-		text-align: right;
-	}
-	.logo {
-		margin-left: -10px;
-	}
+    label {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .logo {
+        margin-left: -10px;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
 }

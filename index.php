@@ -22,7 +22,10 @@
 <body>
     <div class="container">
         <header>
-            <a href="#"><img class="col-xs-6 col-xs-offset-3 col-md-4 logo" src="public/images/LookFabulous.png" alt="Lookfabulous.com" width="260px"></a>
+            <a href="#"><img class="col-md-4 logo" src="public/images/LookFabulous.png" alt="Lookfabulous.com" width="260px"></a>
+            <div class="col-xs-12 logo-mobile">
+              <a href="#"><img src="public/images/lf-logo.png" alt="Lookfabulous.com" width="60px"></a>
+            </div>
         </header>
         <div class="required">
         <hr> Please provide your billing and delivery information below.<span style="float:right">* Indicates required field</span><hr>
@@ -63,17 +66,16 @@
 
             <div>
                 <h2>Please choose a payment method</h2>
-                <button id="creditDebitCardsBtn" onclick="creditDebitCards()" type="button" href="#checkout-cards" class="btn btn-checkout col-xs-12 col-md-4">
+                <button id="creditDebitCardsBtn" onclick="creditDebitCards()" type="button" href="#checkout-cards" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-md-4">
                   Credit/Debit Card
-                  <!-- <img class="credit-debit" src="public/images/Credit-Debit-Cards.png" alt="Credit/Debit Cards" title="Accepted Credit/Debit Cards"> -->
                 </button>
 
-                <button id="paypalBtn" onclick="payPal()" type="button" href="#checkout-paypal" class="btn btn-checkout col-xs-12 col-md-4">
+                <button id="paypalBtn" onclick="payPal()" type="button" href="#checkout-paypal" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-sm-offset-2 col-md-4">
                   PayPal
                   <!-- <img class="paypal" src="public/images/PayPal.png" alt="PayPay" title="Pay by PayPal" width="90px" height="25px"> -->
                 </button>
 
-                <button id="alipayBtn" onclick="aliPay()" type="button" href="#checkout-alipay" class="btn btn-checkout col-xs-12 col-md-4">
+                <button id="alipayBtn" onclick="aliPay()" type="button" href="#checkout-alipay" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-md-4">
                   AliPay
                   <!-- <img class="alipay" src="public/images/AliPay.png" alt="AliPay" title="Pay by AliPay" width="75px" height="25px"> -->
                 </button>
@@ -81,13 +83,13 @@
                 <div id="cardsForm" style="display:none">
                     <form>
                         <label class="col-md-2 col-md-offset-3">Card Number*</label>
-                        <input class="form-control col-md-3 col-xs-12" type="text" placeholder="Card Number*"><br>
+                        <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Card Number*"><br>
 
                         <label class="col-md-2 col-md-offset-3">Name on Card*</label>
-                        <input class="form-control col-md-3 col-xs-12" type="text" placeholder="Name on Card*"><br>
+                        <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Name on Card*"><br>
 
                         <label class="col-md-2 col-md-offset-3">Expiry Date*</label>
-                        <select class="form-control col-md-1 col-xs-6">
+                        <select class="form-control col-md-1 col-sm-4 col-sm-offset-2 col-xs-6 expiry-date">
                           <option value selected disabled="">Month</option>
                           <option>01</option>
                           <option>02</option>
@@ -103,7 +105,7 @@
                           <option>12</option>
                         </select>
 
-                        <select class="form-control col-md-1 col-xs-6">
+                        <select class="form-control col-md-1 col-sm-4 col-xs-6 expiry-date">
                           <option value selected disabled>Year</option>
                           <option>17</option>
                           <option>18</option>
@@ -116,7 +118,7 @@
                         </select><br>
 
                         <label class="col-md-2 col-md-offset-3">CVV*</label>
-                        <input class="form-control col-md-3 col-xs-12" type="text" placeholder="CVV* - 3 digits on the back of your card">
+                        <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="CVV* - 3 digits on the back of your card">
                         <label class="help-tip">
                           <p>
                             <img src="public/images/cvv.png" alt="CVV" title="CVV" width="100px" style="padding-bottom:10px"><br>
@@ -125,7 +127,7 @@
                         </label>
                     </form>
 
-                    <div class="col-xs-12 col-md-offset-3" style="margin-top:35px; margin-bottom:35px;">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-3" style="margin-top:35px; margin-bottom:35px;">
                         <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddressHide()" required checked>Use my delivery address as my cardholder address<br>
                         <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddress()" required>Use a different address
                     </div>
@@ -133,43 +135,43 @@
                     <div id="newAddressForm" style="display:none">
                         <form>
                             <label class="col-md-3 col-md-offset-2">House Name/Number*</label>
-                            <input class="form-control col-md-3 col-xs-12" type="text" placeholder="House Name or Number*"><br>
+                            <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="House Name or Number*"><br>
 
                             <label class="col-md-2 col-md-offset-3">Address Line 1*</label>
-                            <input class="form-control col-md-3 col-xs-12" type="text" placeholder="Address Line 1*"><br>
+                            <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Address Line 1*"><br>
 
                             <label class="col-md-2 col-md-offset-3">Address Line 2</label>
-                            <input class="form-control col-md-3 col-xs-12" type="text" placeholder="Address Line 2 - optional"><br>
+                            <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Address Line 2 - optional"><br>
 
                             <label class="col-md-2 col-md-offset-3">City/Town*</label>
-                            <input class="form-control col-md-3 col-xs-12" type="text" placeholder="City*"><br>
+                            <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="City*"><br>
 
                             <?php
                               if ($country == "United Kingdom") {
                                 echo '<label class="col-md-2 col-md-offset-3">County*</label>';
-                                echo '<input class="form-control col-md-3 col-xs-12" type="text" placeholder="County*"><br>';
+                                echo '<input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="County*"><br>';
                               }
 
                               else {
                                 echo '<label class="col-md-2 col-md-offset-3">State*</label>';
-                                echo '<input class="form-control col-md-3 col-xs-12" type="text" placeholder="State*"><br>';
+                                echo '<input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="State*"><br>';
                               }
                             ?>
 
                             <?php
                               if ($country == "United Kingdom") {
                                 echo '<label class="col-md-2 col-md-offset-3">Post Code*</label>';
-                                echo '<input class="form-control col-md-3 col-xs-12" type="text" placeholder="Post Code*"><br>';
+                                echo '<input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Post Code*"><br>';
                               }
 
                               else {
                                 echo '<label class="col-md-2 col-md-offset-3">Zip Code*</label>';
-                                echo '<input class="form-control col-md-3 col-xs-12" type="text" placeholder="Zip Code*"><br>';
+                                echo '<input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Zip Code*"><br>';
                               }
                             ?>
 
                             <label class="col-md-2 col-md-offset-3">Country*</label>
-                            <select class="form-control col-md-3 col-xs-12">
+                            <select class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12">
                                 <option value disabled>Please choose a country</option>
                                 <?php
                                   if ($country == "United Kingdom"){
@@ -196,9 +198,9 @@
 
                 <hr>
 
-                <button type="button" href="#" class="btn btn-submit col-md-4 col-md-offset-4 col-xs-12">Submit My Order</button>
-                <button type="button" href="#" class="btn btn-back col-md-4 col-md-offset-4 col-xs-12">Back</button>
-                <p style="margin-top: 40px">By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
+                <button type="button" href="#" class="btn btn-submit col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">Submit My Order</button>
+                <button type="button" href="#" class="btn btn-back col-sm-8 col-sm-offset-2 col-xs-12">Back</button>
+                <p style="margin: 40px">By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
             </div>
         </div>
     </div>
