@@ -1,0 +1,284 @@
+@import "variables";
+@import "grid";
+@import "buttons";
+@import "form-control";
+@import "help-tip";
+
+.alipay,
+.credit-debit,
+.paypal {
+    margin: auto;
+    display: block;
+    width: auto;
+    height: 32px;
+    padding-top: 25px;
+}
+@media (min-width: 992px) {
+    .credit-debit {
+        margin-left: 45%;
+    }
+}
+@media (min-width: 768px) {
+    .alipay,
+    .credit-debit,
+    .paypal {
+        height: 32px;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    color: $darker-grey;
+    font-weight: 200;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    color: $lightest-grey;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+
+    li {
+        display: inline-block;
+
+        a {
+            display: block;
+            color: $darker-grey;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+            &:hover {
+                color: $turquoise;
+                border-bottom: 2px solid $turquoise;
+            }
+        }
+    }
+}
+
+.digicert {
+    float: right;
+    width: auto;
+    height: 40px;
+}
+@media (min-width: 992px) {
+    .digicert {
+        height: 50px;
+    }
+}
+
+.progress {
+    display: none;
+}
+@media (max-width: 991px) {
+    label {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .progress {
+        display: block;
+        color: $grey;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: -35px;
+        font-weight: 700;
+    }
+
+    .progress-1,
+    .progress-2 {
+        display: inline-block;
+        background: $darker-grey;
+        color: $white;
+        border: 2px solid $darker-grey;
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+        padding-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .progress-3 {
+        display: inline-block;
+        background: $turquoise;
+        color: $white;
+        border: 2px solid $turquoise;
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+        padding-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .progress-4 {
+        display: inline-block;
+        background: $grey;
+        color: $darker-grey;
+        border: 2px solid $grey;
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+        padding-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    ul {
+        display: none;
+    }
+}
+
+.payment-methods {
+    background: #ddd;
+    border-radius: 4px;
+    padding: 50px;
+}
+
+p {
+    text-align: center;
+}
+
+input[type="radio"] {
+    margin-top: 15px;
+}
+
+.required {
+    margin-top: -40px;
+}
+
+.cart {
+    border: 1px solid $lightest-grey;
+    border-radius: 4px;
+    min-height: 200px;
+    margin-top: 50px;
+    font-size: 14px;
+    padding: 0;
+}
+
+.cart-header {
+    background: $turquoise;
+    color: $white;
+    font-size: 20px;
+    line-height: 2.2;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    padding: 0;
+}
+@media (max-width: 767px) {
+    .cart {
+        img {
+            display: none;
+        }
+    }
+}
+
+.cart-info {
+    padding: 20px;
+    float: left;
+}
+
+.cart-price {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.cart-delivery {
+    padding: 15px 15px 10px;
+    text-align: right;
+}
+
+.cart-total-price {
+    padding-top: 15px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+    border-top: 1px solid $lightest-grey;
+}
+@media (min-width: 768px) {
+    .cart {
+        img {
+            display: block;
+            float: left;
+            padding: 15px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .cart-total-price {
+        font-size: 14px;
+    }
+}
+
+.tandc-pp {
+    color: $grey;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    color: $grey;
+}
+@media (max-width: 991px) {
+    hr {
+        width: 80%;
+    }
+
+    .required {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .logo-mobile {
+        img {
+            height: 40px;
+            width: auto;
+        }
+    }
+}
+@media (min-width: 992px) {
+    label {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .logo {
+        margin-left: -10px;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+}
