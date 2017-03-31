@@ -1,71 +1,83 @@
 @import "variables";
+
 .form-control {
 	height: 35px;
 	margin-top: 10px;
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 1.4em;
-	color: #555;
-	background-color: #fff;
-	border: 1px solid #ccc;
+	color: $darkest-grey;
+	background-color: $white;
+	border: 1px solid $light-grey;
 	border-radius: 4px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
-	transition: border-color ease-in-out .15s box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out 0.15s box-shadow ease-in-out 0.15s;
 }
+
 .col-form-label {
 	text-align: right;
 }
+
 @media (min-width: 992px) {
-	.form-control {
-		&::-moz-placeholder {
-			color: white !important;
-			opacity: 1;
-			color: white !important;
-			opacity: 1;
-		}
-	}
-	* {
-		&::-moz-placeholder {
-			color: white !important;
-		}
-		&::-webkit-input-placeholder {
-			color: white !important;
-		}
-		&::-webkit-input-placeholder {
-			color: white !important;
-			opacity: 1;
-		}
-	&::-webkit-input-placeholder {
+	.form-control::-moz-placeholder {
 		color: white !important;
 		opacity: 1;
 	}
-}
+
+	.form-control::-moz-placeholder {
+		color: white !important;
+		opacity: 1;
+	}
+
+	*::-moz-placeholder {
+		color: white !important;
+	}
+
+	::-webkit-input-placeholder {
+		color: white !important;
+		opacity: 1;
+	}
+
+	*::-webkit-input-placeholder {
+		color: white !important;
+	}
+
+	.expiry-date {
+		width: 13.5%;
+	}
+
+	.country {
+		width: 27.5%;
+	}
 }
 @media (max-width: 767px) {
 	.form-control {
-		width: 93.5%
+		width: 93.5%;
 	}
+
 	.expiry-date {
 		width: 49%;
 	}
+	.country {
+		width: 97.5%;
+	}
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
 	.form-control {
 		width: 64%;
 	}
+
 	.expiry-date {
 		width: 33%;
+	}
+
+	.country {
+		width: 67.5%
 	}
 }
 @media (max-width: 991px) {
 	.form-control {
 		height: 45px;
 		font-size: 16px;
-	}
-}
-@media (min-width: 992px) {
-	.expiry-date {
-		width: 13.5%;
 	}
 }

@@ -4,31 +4,31 @@
 @import "form-control";
 @import "help-tip";
 
-.credit-debit {
-    margin-top: 5px;
-    width: 150px;
-    height: 20px;
-    width: 650px;
-    height: auto;
-}
-
+.alipay,
+.credit-debit,
 .paypal {
-    width: 90px;
-    height: 25px;
+    margin: auto;
+    display: block;
     width: auto;
-    height: 88px;
+    height: 32px;
+    padding-top: 25px;
 }
-
-.alipay {
-    width: 75px;
-    height: 25px;
-    width: auto;
-    height: 88px;
+@media (min-width: 992px) {
+    .credit-debit {
+        margin-left: 45%;
+    }
+}
+@media (min-width: 768px) {
+    .alipay,
+    .credit-debit,
+    .paypal {
+        height: 32px;
+    }
 }
 
 body {
     font-family: sans-serif;
-    color: #696868;
+    color: $darker-grey;
     font-weight: 200;
 }
 
@@ -37,7 +37,7 @@ h2 {
 }
 
 hr {
-    color: #eee;
+    color: $lightest-grey;
     margin-top: 40px;
     margin-bottom: 40px;
     border-top: 1px solid;
@@ -50,83 +50,97 @@ ul {
     padding: 0;
     overflow: hidden;
     text-align: center;
-li {
-    display: inline-block;
 
-    a {
-        display: block;
-        color: #777;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+    li {
+        display: inline-block;
 
-        &:hover {
-            color: #28bdb3;
-            border-bottom: 2px solid #28bdb3;
+        a {
+            display: block;
+            color: $darker-grey;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+            &:hover {
+                color: $turquoise;
+                border-bottom: 2px solid $turquoise;
+            }
         }
     }
 }
+
+.digicert {
+    float: right;
+    width: auto;
+    height: 40px;
 }
+@media (min-width: 992px) {
+    .digicert {
+        height: 50px;
+    }
+}
+
 .progress {
-  display: none;
+    display: none;
 }
 @media (max-width: 991px) {
     label {
         display: none;
     }
 }
+@media (max-width: 767px) {
+    .progress {
+        display: block;
+        color: $grey;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: -35px;
+        font-weight: 700;
+    }
 
-@media (max-width: 767px){
-.progress {
-  display: block;
-  color: #b1b1b1;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: -35px;
-  font-weight: 700;
-}
-.progress-1, .progress-2 {
-  display: inline-block;
-  background: #777;
-  color: #fff;
-  border: 2px solid #777;
-  border-radius: 50%;
-  width: 30px;
-  height: 25px;
-  padding-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+    .progress-1,
+    .progress-2 {
+        display: inline-block;
+        background: $darker-grey;
+        color: $white;
+        border: 2px solid $darker-grey;
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+        padding-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-.progress-3 {
-  display: inline-block;
-  background: #28bdb3;
-  color: #fff;
-  border: 2px solid #28bdb3;
-  border-radius: 50%;
-  width: 30px;
-  height: 25px;
-  padding-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+    .progress-3 {
+        display: inline-block;
+        background: $turquoise;
+        color: $white;
+        border: 2px solid $turquoise;
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+        padding-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-.progress-4 {
-  display: inline-block;
-  background: #b1b1b1;
-  color: #777;
-  border: 2px solid #b1b1b1;
-  border-radius: 50%;
-  width: 30px;
-  height: 25px;
-  padding-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+    .progress-4 {
+        display: inline-block;
+        background: $grey;
+        color: $darker-grey;
+        border: 2px solid $grey;
+        border-radius: 50%;
+        width: 30px;
+        height: 25px;
+        padding-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-ul {
-  display: none;
-}
+    ul {
+        display: none;
+    }
 }
 
 .payment-methods {
@@ -148,78 +162,75 @@ input[type="radio"] {
 }
 
 .cart {
-    border: 1px solid #eee;
+    border: 1px solid $lightest-grey;
     border-radius: 4px;
     min-height: 200px;
     margin-top: 50px;
     font-size: 14px;
+    padding: 0;
 }
 
 .cart-header {
-    background: #28bdb3;
-    color: #fff;
+    background: $turquoise;
+    color: $white;
     font-size: 20px;
     line-height: 2.2;
     text-align: center;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
-    margin-left: -15px;
+    padding: 0;
 }
-
-
 @media (max-width: 767px) {
-  .cart {
-    img {
-    display: none;
-  }
-  }
+    .cart {
+        img {
+            display: none;
+        }
+    }
 }
 
 .cart-info {
-  padding: 20px;
-  float: left;
+    padding: 20px;
+    float: left;
 }
+
 .cart-price {
-  margin-top: 40px;
-  text-align: right;
+    margin-top: 40px;
+    text-align: right;
 }
 
 .cart-delivery {
-  padding: 15px;
-  padding-bottom: 10px;
-  text-align: right;
+    padding: 15px 15px 10px;
+    text-align: right;
 }
 
 .cart-total-price {
-  padding-top: 15px;
-  text-align: right;
-  font-weight: 700;
-  font-size: 18px;
-  border-top: 1px solid #eee;
-}
-
-@media (min-width: 768px) {
-  .cart {
-    img {
-    display: block;
-    margin-left: -15px;
-    float: left;
     padding-top: 15px;
-  }
-  }
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+    border-top: 1px solid $lightest-grey;
 }
-
+@media (min-width: 768px) {
+    .cart {
+        img {
+            display: block;
+            float: left;
+            padding: 15px;
+        }
+    }
+}
 @media (max-width: 767px) {
-  h2 {
-    font-size: 20px;
-  }
-  .cart-total-price {
-    font-size: 14px;
-  }
+    h2 {
+        font-size: 20px;
+    }
+
+    .cart-total-price {
+        font-size: 14px;
+    }
 }
 
 .tandc-pp {
-    color: #b1b1b1;
+    color: $grey;
     cursor: pointer;
 
     &:hover {
@@ -230,7 +241,7 @@ input[type="radio"] {
 footer {
     text-align: center;
     padding: 50px;
-    color: #b1b1b1;
+    color: $grey;
 }
 @media (max-width: 991px) {
     hr {
@@ -247,20 +258,15 @@ footer {
 
     .logo-mobile {
         margin-bottom: 20px;
-
-        img {
-            display: block;
-            margin: auto;
-        }
     }
 }
 @media (max-width: 767px) {
-  .logo-mobile {
-    img {
-      height: 40px;
-      width: auto;
+    .logo-mobile {
+        img {
+            height: 40px;
+            width: auto;
+        }
     }
-  }
 }
 @media (min-width: 992px) {
     label {

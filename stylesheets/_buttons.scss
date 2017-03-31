@@ -1,7 +1,8 @@
 @import "variables";
+
 .btn {
 	display: inline-block;
-	color: #fff;
+	color: $white;
 	padding: 6px 12px;
 	margin-top: 10px;
 	font-size: 14px;
@@ -11,23 +12,28 @@
 	border-radius: 4px;
 	min-height: 42px;
 	cursor: pointer;
+
 	&:focus {
 		outline: 0;
 	}
 }
+
 .btn-checkout {
-	color: #fff;
-	background: #ababab;
-	font-family: monospace;
-	font-weight: bold;
+	color: $white;
+	background: $grey;
+	font-weight: 100;
+	font-size: 20px;
+
 	&:hover {
 		background: $turquoise !important;
 	}
 }
+
 .btn-submit {
 	background: $orange;
+
 	&:hover {
-		background: #d17f1b;
+		background: $dark-orange;
 	}
 }
 @media (max-width: 991px) {
@@ -35,17 +41,20 @@
 		height: 65px;
 		font-size: 18px;
 	}
+
 	.btn-checkout {
 		height: 65px;
 		font-size: 18px;
 	}
+
 	.btn-back {
 		display: block;
-		background: #ccc;
-		color: #777;
+		background: $light-grey;
+		color: $darker-grey;
+
 		&:hover {
-			background: #a2a2a2;
-			color: #fff;
+			background: $dark-grey;
+			color: $white;
 		}
 	}
 }
