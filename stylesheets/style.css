@@ -254,23 +254,6 @@
       -ms-transform: rotate(270deg);
       transform: rotate(270deg); }
 
-.alipay,
-.credit-debit,
-.paypal {
-  margin: auto;
-  display: block;
-  width: auto;
-  height: 32px;
-  padding-top: 25px; }
-
-@media (min-width: 992px) {
-  .credit-debit {
-    margin-left: 45%; } }
-@media (min-width: 768px) {
-  .alipay,
-  .credit-debit,
-  .paypal {
-    height: 32px; } }
 body {
   font-family: sans-serif;
   color: #777;
@@ -304,21 +287,90 @@ ul {
         color: #28bdb3;
         border-bottom: 2px solid #28bdb3; }
 
+p {
+  text-align: center; }
+
+input[type="radio"] {
+  margin-top: 15px; }
+
 .digicert {
   float: right;
   width: auto;
   height: 40px; }
 
-@media (min-width: 992px) {
-  .digicert {
-    height: 50px; } }
+.required {
+  margin-top: -40px; }
+
 .progress {
   display: none; }
 
-@media (max-width: 991px) {
-  label {
-    display: none; } }
+.alipay,
+.credit-debit,
+.paypal {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: 32px;
+  padding-top: 25px; }
+
+.payment-methods {
+  background: #ddd;
+  border-radius: 4px;
+  padding: 50px; }
+
+.cart {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  min-height: 200px;
+  margin-top: 50px;
+  font-size: 14px;
+  padding: 0; }
+
+.cart-header {
+  background: #28bdb3;
+  color: #fff;
+  font-size: 20px;
+  line-height: 2.2;
+  text-align: center;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  padding: 0; }
+
+.cart-info {
+  padding: 20px;
+  float: left; }
+
+.cart-price {
+  margin-top: 40px;
+  text-align: right; }
+
+.cart-delivery {
+  padding: 15px 15px 10px;
+  text-align: right; }
+
+.cart-total-price {
+  padding-top: 15px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 18px;
+  border-top: 1px solid #eee; }
+
+.tandc-pp {
+  color: #ababab;
+  cursor: pointer; }
+  .tandc-pp:hover {
+    text-decoration: none; }
+
+footer {
+  text-align: center;
+  padding: 50px;
+  color: #ababab; }
+
 @media (max-width: 767px) {
+  .logo-mobile img {
+    height: 40px;
+    width: auto; }
+
   .progress {
     display: block;
     color: #ababab;
@@ -365,84 +417,35 @@ ul {
     margin-right: 10px; }
 
   ul {
-    display: none; } }
-.payment-methods {
-  background: #ddd;
-  border-radius: 4px;
-  padding: 50px; }
+    display: none; }
 
-p {
-  text-align: center; }
-
-input[type="radio"] {
-  margin-top: 15px; }
-
-.required {
-  margin-top: -40px; }
-
-.cart {
-  border: 1px solid #eee;
-  border-radius: 4px;
-  min-height: 200px;
-  margin-top: 50px;
-  font-size: 14px;
-  padding: 0; }
-
-.cart-header {
-  background: #28bdb3;
-  color: #fff;
-  font-size: 20px;
-  line-height: 2.2;
-  text-align: center;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  padding: 0; }
-
-@media (max-width: 767px) {
   .cart img {
-    display: none; } }
-.cart-info {
-  padding: 20px;
-  float: left; }
+    display: none; }
 
-.cart-price {
-  margin-top: 40px;
-  text-align: right; }
-
-.cart-delivery {
-  padding: 15px 15px 10px;
-  text-align: right; }
-
-.cart-total-price {
-  padding-top: 15px;
-  text-align: right;
-  font-weight: 700;
-  font-size: 18px;
-  border-top: 1px solid #eee; }
-
-@media (min-width: 768px) {
-  .cart img {
-    display: block;
-    float: left;
-    padding: 15px; } }
-@media (max-width: 767px) {
   h2 {
     font-size: 20px; }
 
   .cart-total-price {
     font-size: 14px; } }
-.tandc-pp {
-  color: #ababab;
-  cursor: pointer; }
-  .tandc-pp:hover {
-    text-decoration: none; }
+@media (min-width: 768px) {
+  .alipay,
+  .credit-debit,
+  .paypal {
+    height: 32px; }
 
-footer {
-  text-align: center;
-  padding: 50px;
-  color: #ababab; }
-
+  .cart img {
+    display: block;
+    float: left;
+    padding: 15px; } }
 @media (max-width: 991px) {
+  label {
+    display: none; }
+
+  .required-mobile {
+    display: block;
+    text-align: center;
+    padding-top: 20px; }
+
   hr {
     width: 80%; }
 
@@ -454,11 +457,13 @@ footer {
 
   .logo-mobile {
     margin-bottom: 20px; } }
-@media (max-width: 767px) {
-  .logo-mobile img {
-    height: 40px;
-    width: auto; } }
 @media (min-width: 992px) {
+  .credit-debit {
+    margin-left: 45%; }
+
+  .digicert {
+    height: 50px; }
+
   label {
     display: inline-block;
     text-align: right; }
@@ -467,6 +472,9 @@ footer {
     margin-left: -10px; }
 
   .logo-mobile {
+    display: none; }
+
+  .required-mobile {
     display: none; } }
 
 /*# sourceMappingURL=style.css.map */
