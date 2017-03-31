@@ -159,6 +159,9 @@
         </section><!-- End of payment method buttons -->
 
         <section id="cardsForm" style="display:none"><!-- Beginning of card payment method hidden form  -->
+            <div class="required-mobile">
+              * Indicates required field
+            </div>
             <form>
                 <img class="credit-debit" src="public/images/Credit-Debit-Cards.png" alt="Accepted Credit and Debit Cards" title="Accepted Credit and Debit Cards">
                 <label class="col-md-2 col-md-offset-3">Card Number*</label>

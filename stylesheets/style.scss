@@ -4,28 +4,6 @@
 @import "form-control";
 @import "help-tip";
 
-.alipay,
-.credit-debit,
-.paypal {
-    margin: auto;
-    display: block;
-    width: auto;
-    height: 32px;
-    padding-top: 25px;
-}
-@media (min-width: 992px) {
-    .credit-debit {
-        margin-left: 45%;
-    }
-}
-@media (min-width: 768px) {
-    .alipay,
-    .credit-debit,
-    .paypal {
-        height: 32px;
-    }
-}
-
 body {
     font-family: sans-serif;
     color: $darker-grey;
@@ -69,86 +47,6 @@ ul {
     }
 }
 
-.digicert {
-    float: right;
-    width: auto;
-    height: 40px;
-}
-@media (min-width: 992px) {
-    .digicert {
-        height: 50px;
-    }
-}
-
-.progress {
-    display: none;
-}
-@media (max-width: 991px) {
-    label {
-        display: none;
-    }
-}
-@media (max-width: 767px) {
-    .progress {
-        display: block;
-        color: $grey;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: -35px;
-        font-weight: 700;
-    }
-
-    .progress-1,
-    .progress-2 {
-        display: inline-block;
-        background: $darker-grey;
-        color: $white;
-        border: 2px solid $darker-grey;
-        border-radius: 50%;
-        width: 30px;
-        height: 25px;
-        padding-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .progress-3 {
-        display: inline-block;
-        background: $turquoise;
-        color: $white;
-        border: 2px solid $turquoise;
-        border-radius: 50%;
-        width: 30px;
-        height: 25px;
-        padding-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .progress-4 {
-        display: inline-block;
-        background: $grey;
-        color: $darker-grey;
-        border: 2px solid $grey;
-        border-radius: 50%;
-        width: 30px;
-        height: 25px;
-        padding-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    ul {
-        display: none;
-    }
-}
-
-.payment-methods {
-    background: #ddd;
-    border-radius: 4px;
-    padding: 50px;
-}
-
 p {
     text-align: center;
 }
@@ -157,8 +55,34 @@ input[type="radio"] {
     margin-top: 15px;
 }
 
+.digicert {
+    float: right;
+    width: auto;
+    height: 40px;
+}
+
 .required {
     margin-top: -40px;
+}
+
+.progress {
+    display: none;
+}
+
+.alipay,
+.credit-debit,
+.paypal {
+    margin: auto;
+    display: block;
+    width: auto;
+    height: 32px;
+    padding-top: 25px;
+}
+
+.payment-methods {
+    background: #ddd;
+    border-radius: 4px;
+    padding: 50px;
 }
 
 .cart {
@@ -179,13 +103,6 @@ input[type="radio"] {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     padding: 0;
-}
-@media (max-width: 767px) {
-    .cart {
-        img {
-            display: none;
-        }
-    }
 }
 
 .cart-info {
@@ -210,24 +127,6 @@ input[type="radio"] {
     font-size: 18px;
     border-top: 1px solid $lightest-grey;
 }
-@media (min-width: 768px) {
-    .cart {
-        img {
-            display: block;
-            float: left;
-            padding: 15px;
-        }
-    }
-}
-@media (max-width: 767px) {
-    h2 {
-        font-size: 20px;
-    }
-
-    .cart-total-price {
-        font-size: 14px;
-    }
-}
 
 .tandc-pp {
     color: $grey;
@@ -243,42 +142,145 @@ footer {
     padding: 50px;
     color: $grey;
 }
-@media (max-width: 991px) {
-    hr {
-        width: 80%;
-    }
 
-    .required {
-        display: none;
-    }
 
-    .logo {
-        display: none;
-    }
-
-    .logo-mobile {
-        margin-bottom: 20px;
-    }
-}
 @media (max-width: 767px) {
-    .logo-mobile {
-        img {
-            height: 40px;
-            width: auto;
-        }
-    }
+  .logo-mobile {
+      img {
+          height: 40px;
+          width: auto;
+      }
+  }
+  .progress {
+      display: block;
+      color: $grey;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: -35px;
+      font-weight: 700;
+  }
+
+  .progress-1,
+  .progress-2 {
+      display: inline-block;
+      background: $darker-grey;
+      color: $white;
+      border: 2px solid $darker-grey;
+      border-radius: 50%;
+      width: 30px;
+      height: 25px;
+      padding-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .progress-3 {
+      display: inline-block;
+      background: $turquoise;
+      color: $white;
+      border: 2px solid $turquoise;
+      border-radius: 50%;
+      width: 30px;
+      height: 25px;
+      padding-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .progress-4 {
+      display: inline-block;
+      background: $grey;
+      color: $darker-grey;
+      border: 2px solid $grey;
+      border-radius: 50%;
+      width: 30px;
+      height: 25px;
+      padding-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  ul {
+      display: none;
+  }
+  .cart {
+      img {
+          display: none;
+      }
+  }
+  h2 {
+      font-size: 20px;
+  }
+
+  .cart-total-price {
+      font-size: 14px;
+  }
 }
+
+@media (min-width: 768px) {
+  .alipay,
+  .credit-debit,
+  .paypal {
+      height: 32px;
+  }
+  .cart {
+      img {
+          display: block;
+          float: left;
+          padding: 15px;
+      }
+  }
+}
+
+@media (max-width: 991px) {
+  label {
+      display: none;
+  }
+  .required-mobile {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
+  hr {
+      width: 80%;
+  }
+
+  .required {
+      display: none;
+  }
+
+  .logo {
+      display: none;
+  }
+
+  .logo-mobile {
+      margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 992px) {
-    label {
-        display: inline-block;
-        text-align: right;
-    }
+  .credit-debit {
+      margin-left: 45%;
+  }
 
-    .logo {
-        margin-left: -10px;
-    }
+  .digicert {
+      height: 50px;
+  }
 
-    .logo-mobile {
-        display: none;
-    }
+  label {
+      display: inline-block;
+      text-align: right;
+  }
+
+  .logo {
+      margin-left: -10px;
+  }
+
+  .logo-mobile {
+      display: none;
+  }
+
+  .required-mobile {
+    display: none;
+  }
 }
