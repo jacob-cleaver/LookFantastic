@@ -556,10 +556,12 @@
 
             <p style="margin: 40px">By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
         </section><!-- End of confirm order -->
-    </div><!-- End of Container -->
+    </div><!-- End of container -->
+
     <footer><!-- Beginning of footer -->
         &copy; Jacob Cleaver 2017 - LookFabulous Checkout Form
     </footer><!-- End of footer -->
+
 </body>
 
 </html>
