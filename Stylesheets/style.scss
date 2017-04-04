@@ -4,6 +4,7 @@
 @import "form-control";
 @import "modal";
 @import "mobile";
+@import "accordion";
 
 body {
 	font-family: sans-serif;
@@ -36,6 +37,12 @@ hr {
 	display: none;
 }
 
+.product-info {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 0;
+}
+
 .product {
 	text-align: center;
 	padding-top: 30px;
@@ -64,6 +71,11 @@ hr {
 
 .product-price {
 	display: none;
+}
+
+.price-per-kg {
+	color: #728391;
+	font-size: 12px;
 }
 
 .rating {
@@ -129,12 +141,8 @@ footer {
 			height: auto;
 			min-width: 300px;
 			min-height: 300px;
+			cursor: pointer;
 		}
-	}
-
-	.product-info {
-		display: none;
-		display: none;
 	}
 
 	.product-title {
@@ -209,5 +217,11 @@ footer {
 			font-size: 16px;
 			text-align: center;
 		}
+	}
+}
+
+@media (min-width: 768px) {
+	.pr-price-mobile {
+		display: none !important;
 	}
 }

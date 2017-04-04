@@ -1,22 +1,19 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+$(function () {
+  $('.pr-price').hide();
+  $('.d2').show();
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  }
-}
-
-$(".toggle").click(function(){
-  $(".navcollaps").toggleClass("show");
+  $('#select').on("change",function () {
+    $('.pr-price').hide();
+    $('.d'+$(this).val()).show();
+  }).val("2");
 });
 
-document.getElementsByClassName('toggle').click(fucntion(){
-  document.getElementsByClassName('navcollaps').toggleClass("show");
+$(function () {
+  $('.pr-price-mobile').hide();
+  $('.d2').show();
+
+  $('#select').on("change",function () {
+    $('.pr-price-mobile').hide();
+    $('.d'+$(this).val()).show();
+  }).val("2");
 });
