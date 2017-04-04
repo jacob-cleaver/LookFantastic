@@ -31,12 +31,12 @@
 <body>
     <div class="container"><!--Beginning of container -->
 
-        <header><!-- Beginning of header -->
-            <a href="#"><img class="col-md-4 logo" src="public/images/LookFabulous.png" alt="Lookfabulous.com" width="260px"></a>
-            <img class="digicert" src="public/images/digicert.png" alt="Digitcert" width="100px">
+        <header role="heading"><!-- Beginning of header -->
+            <a href="#"><img class="col-md-4 logo" src="public/images/LookFabulous.png" alt="Lookfabulous.com" width="260px" role="img"></a>
+            <img class="digicert" src="public/images/digicert.png" alt="Digitcert" width="100px" role="img">
 
             <div class="col-xs-12 logo-mobile">
-                <a href="#"><img src="public/images/lf-logo.png" alt="Lookfabulous.com" width="60px"></a>
+                <a href="#"><img src="public/images/lf-logo.png" alt="Lookfabulous.com" width="60px" role="img"></a>
             </div>
 
             <div class="required"><!-- Required info -->
@@ -46,7 +46,7 @@
             </div><!-- End of required info -->
         </header><!-- End of header -->
 
-        <section id="progress"><!-- Beginning of progress bar -->
+        <section id="progress" role="section"><!-- Beginning of progress bar -->
             <ul class="col-xs-8 col-xs-offset-2"><!-- Progress bar for a min-width of 992px -->
                 <li><a href="#details">1. Details</a></li>
                 <li><a href="#delivery">2. Delivery</a></li>
@@ -62,13 +62,13 @@
             </div>
         </section><!-- End of progress bar -->
 
-        <section id="cart"><!-- Beginning of shopping cart/order summary -->
+        <section id="cart" role="section"><!-- Beginning of shopping cart/order summary -->
             <div class="cart col-xs-12">
                 <div class="cart-header col-xs-12">
                     Your Order Summary
                 </div>
                 <div class="col-sm-2 col-md-2">
-                    <img src="public/images/bulldog-moisturiser.png" alt="Bulldog Original Moisturiser" width="100px">
+                    <img src="public/images/bulldog-moisturiser.png" alt="Bulldog Original Moisturiser" width="100px" role="img">
                 </div>
                 <div class="col-xs-6 cart-info">
                     <p>1 x Bulldog Original Moisturiser (100ml) - Men's Skin Care Product</p>
@@ -143,27 +143,27 @@
             </div>
         </section><!-- End of shopping cart/order summary -->
 
-        <section id="payment-method-buttons"><!-- Beginning payment method buttons -->
+        <section id="payment-method-buttons" role="section"><!-- Beginning payment method buttons -->
             <h2>Please choose a payment method</h2>
-            <button id="creditDebitCardsBtn" onclick="creditDebitCards()" type="button" href="#checkout-cards" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-md-4">
+            <button id="creditDebitCardsBtn" onclick="creditDebitCards()" type="button" href="#checkout-cards" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-md-4" role="button">
                 Credit/Debit Card
             </button>
 
-            <button id="paypalBtn" onclick="payPal()" type="button" href="#checkout-paypal" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-sm-offset-2 col-md-4">
+            <button id="paypalBtn" onclick="payPal()" type="button" href="#checkout-paypal" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-sm-offset-2 col-md-4" role="button">
                 PayPal
             </button>
 
-            <button id="alipayBtn" onclick="aliPay()" type="button" href="#checkout-alipay" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-md-4">
+            <button id="alipayBtn" onclick="aliPay()" type="button" href="#checkout-alipay" class="btn btn-checkout col-xs-12 col-sm-8 col-sm-offset-2 col-md-4" role="button">
                 AliPay
             </button>
         </section><!-- End of payment method buttons -->
 
-        <section id="cardsForm" style="display:none"><!-- Beginning of card payment method hidden form  -->
+        <section id="cardsForm" style="display:none" role="section"><!-- Beginning of card payment method hidden form  -->
             <div class="required-mobile">
               * Indicates required field
             </div>
-            <form>
-                <img class="credit-debit" src="public/images/Credit-Debit-Cards.png" alt="Accepted Credit and Debit Cards" title="Accepted Credit and Debit Cards">
+            <form role="form">
+                <img class="credit-debit" src="public/images/Credit-Debit-Cards.png" alt="Accepted Credit and Debit Cards" title="Accepted Credit and Debit Cards" role="img">
                 <label class="col-md-2 col-md-offset-3">Card Number*</label>
                 <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Card Number*">
                 <br>
@@ -207,14 +207,14 @@
 
                 <label class="help-tip"><!-- Beginning of CVV hover help-tip -->
                     <p>
-                        <img src="public/images/cvv.png" alt="CVV" title="CVV" width="100px" style="padding-bottom:10px">
+                        <img src="public/images/cvv.png" alt="CVV" title="CVV" width="100px" style="padding-bottom:10px" role="img">
                         <br> The last three digits printed on the signature strip on the back of your card.
                     </p>
                 </label><!-- End of help-tip -->
             </form> <!-- End of card payment form (if using same as billing address) -->
 
-            <div id="radio-buttons" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-3" style="margin-top:35px; margin-bottom:35px;"><!-- Beginnign of radio buttons -->
-                <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddressHide()" required checked>Use my delivery address as my cardholder address
+            <div id="radio-buttons" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-3" style="margin-top:35px; margin-bottom:35px" role="radio"><!-- Beginnign of radio buttons -->
+                <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddressHide()" required checked role="radio">Use my delivery address as my cardholder address
                 <br>
                 <input id="newAddressBtn" name="address" type="radio" href="#newAddressForm" onclick="newAddress()" required>Use a different address
             </div><!-- End of radio buttons -->
@@ -222,19 +222,19 @@
             <div id="newAddressForm" style="display:none"><!-- Beginning of new address -->
                 <form><!-- Beginning of new address form (if the shipping address is different to the billing address) -->
                     <label class="col-md-3 col-md-offset-2">House Name/Number*</label>
-                    <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="House Name or Number*">
+                    <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="House Name or Number*" role="input">
                     <br>
 
                     <label class="col-md-2 col-md-offset-3">Address Line 1*</label>
-                    <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Address Line 1*">
+                    <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Address Line 1*" role="input">
                     <br>
 
                     <label class="col-md-2 col-md-offset-3">Address Line 2</label>
-                    <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Address Line 2 - optional">
+                    <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="Address Line 2 - optional" role="input">
                     <br>
 
                     <label class="col-md-2 col-md-offset-3">City*</label>
-                    <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="City*">
+                    <input class="form-control col-md-3 col-sm-8 col-sm-offset-2 col-xs-12" type="text" placeholder="City*" role="input">
                     <br>
                     <!-- PHP to change the lables of the form based on the country
                          Changes from Post Code when the IP address is in the UK to Zip Code everywhere else -->
@@ -540,22 +540,22 @@
             </div><!-- End of New address -->
         </section><!-- End of card payment method forms -->
 
-        <section id="payPal" style="display:none"><!-- Beginning of PayPal hidden content -->
-            <img class="paypal" src="public/images/PayPal.png" alt="PayPay" title="Pay by PayPal">
+        <section id="payPal" style="display:none" role="section"><!-- Beginning of PayPal hidden content -->
+            <img class="paypal" src="public/images/PayPal.png" alt="PayPay" title="Pay by PayPal" role="img">
             <p style="color: #ababab">Please note that using the PayPal checkout will attract a 1% surcharge to the cost of your order.</p>
             <p>You will be re-directed to PayPal.</p>
         </section><!-- End of PayPal -->
 
-        <section id="aliPay" style="display:none"><!-- Beginning of AliPay hidden content -->
+        <section id="aliPay" style="display:none" role="section"><!-- Beginning of AliPay hidden content -->
             <img class="alipay" src="public/images/AliPay.png" alt="AliPay" title="Pay by AliPay">
             <p>You will be re-directed to AliPay.</p>
         </section><!-- End of AliPay -->
 
         <hr>
-        <section id="confirm-order"><!-- Beginning of confirm order button -->
-            <button type="button" href="#" class="btn btn-submit col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">Submit My Order</button>
+        <section id="confirm-order" role="section"><!-- Beginning of confirm order button -->
+            <button type="button" href="#" class="btn btn-submit col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12" role="button">Submit My Order</button>
 
-            <button type="button" href="#" class="btn btn-back col-sm-8 col-sm-offset-2 col-xs-12">Back</button><!-- Mobile back button -->
+            <button type="button" href="#" class="btn btn-back col-sm-8 col-sm-offset-2 col-xs-12" role="button">Back</button><!-- Mobile back button -->
 
             <p style="margin: 40px">By placing this order, your are confirming that you agree to our <u class="tandc-pp">Terms and Conditions</u> and <u class="tandc-pp">Privacy Policy</u></p>
         </section><!-- End of confirm order -->
