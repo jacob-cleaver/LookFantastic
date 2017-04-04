@@ -97,6 +97,50 @@ hr {
 	padding: 20px;
 }
 
+.tg {
+		border-collapse: collapse;
+		border-spacing: 0;
+}
+
+.tg td {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		padding: 10px 5px;
+		border: 1px solid #efefef;
+		overflow: hidden;
+		word-break: normal;
+}
+
+.tg th {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		padding: 10px 5px;
+		border: 1px solid #efefef;
+		overflow: hidden;
+		word-break: normal;
+}
+
+.tg .tg-s6z2 {
+		text-align: center
+}
+
+.tg .tg-bsv2 {
+		background-color: #efefef
+}
+
+.tg .tg-mdvr {
+		font-weight: bold;
+		background-color: #efefef;
+		color: #000;
+		text-align: center
+}
+
+.tg .tg-hgcj {
+		font-weight: bold;
+		text-align: center
+}
+
 footer {
 	color: #a0a0a0;
 	text-align: center;
@@ -220,8 +264,19 @@ footer {
 	}
 }
 
+#other-products {
+	.product {
+		img{
+			width: 40%;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.pr-price-mobile {
 		display: none !important;
+	}
+	#other-products {
+		display: none;
 	}
 }

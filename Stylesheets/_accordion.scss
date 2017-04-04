@@ -15,7 +15,6 @@ button.accordion {
 	&:after {
 		content: '\002B';
 		color: #777;
-		font-weight: bold;
 		float: right;
 		margin-left: 5px;
 	}
@@ -33,4 +32,9 @@ div.panel {
 	overflow: hidden;
 	margin: auto;
 	transition: max-height 0.2s ease-out;
+
+	h4 {
+		font-weight: 700;
+		padding-top: 20px;
+	}
 }

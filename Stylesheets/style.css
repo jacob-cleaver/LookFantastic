@@ -180,22 +180,10 @@
 
   .col-md-offset-12 {
     margin-left: 100%; } }
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #1b1b1b; }
-nav li {
-  float: left; }
-  nav li:hover {
-    background-color: #b13129; }
-  nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    min-height: 75px; }
+.navbar {
+  border-radius: 0;
+  min-height: 80px;
+  margin-bottom: 0; }
 
 .btn {
   color: #fff;
@@ -274,6 +262,9 @@ nav li {
 
   .sign-up .form-control {
     border-radius: 0; } }
+label {
+  margin-top: 20px; }
+
 .modal {
   display: none;
   position: fixed;
@@ -368,7 +359,6 @@ button.accordion {
   button.accordion:after {
     content: '\002B';
     color: #777;
-    font-weight: bold;
     float: right;
     margin-left: 5px; }
 
@@ -384,6 +374,9 @@ div.panel {
   overflow: hidden;
   margin: auto;
   transition: max-height 0.2s ease-out; }
+  div.panel h4 {
+    font-weight: 700;
+    padding-top: 20px; }
 
 body {
   font-family: sans-serif;
@@ -454,6 +447,41 @@ hr {
   color: #777;
   text-align: center;
   padding: 20px; }
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+  word-break: normal; }
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+  word-break: normal; }
+
+.tg .tg-s6z2 {
+  text-align: center; }
+
+.tg .tg-bsv2 {
+  background-color: #efefef; }
+
+.tg .tg-mdvr {
+  background-color: #efefef;
+  color: #000;
+  text-align: center; }
+
+.tg .tg-hgcj {
+  text-align: center; }
 
 footer {
   color: #a0a0a0;
@@ -546,8 +574,14 @@ footer {
       margin: 0;
       font-size: 16px;
       text-align: center; } }
+#other-products .product img {
+  width: 40%; }
+
 @media (min-width: 768px) {
   .pr-price-mobile {
-    display: none !important; } }
+    display: none !important; }
+
+  #other-products {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
