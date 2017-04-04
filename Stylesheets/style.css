@@ -184,7 +184,6 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #1b1b1b; }
 nav li {
   float: left; }
@@ -549,6 +548,6 @@ footer {
       text-align: center; } }
 @media (min-width: 768px) {
   .pr-price-mobile {
-    display: none; } }
+    display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */

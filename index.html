@@ -3,11 +3,12 @@
 
 <head>
     <title>GainX | Product Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <script src="https://use.fontawesome.com/81c9db3dcf.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <script src="main.js"></script>
 
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <ul>
             <li class="col-xs-2">
                 <a class="fa fa-bars" aria-hidden="true" href="#"></a>
@@ -34,6 +35,33 @@
                 <a class="fa fa-shopping-basket" aria-hidden="true" href="#"></a>
             </li>
         </ul>
+    </nav> -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#"><img src="public/images/GainX.png" alt="GainX.com" width="120px" height="42px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <section id="breadcrumbs" class="col-xs-12 breadcrumbs">
@@ -67,7 +95,7 @@
             </div>
         </div>
 
-        <div id="2kg-mobile" class="col-xs-12 product-price-mobile">
+        <div class="col-xs-12 pr-price-mobile d1">
             <p class="price-rrp-mobile">Oli <del>326kr</del> S&auml;&auml;st&auml; 65kr</p>
             <p class="price">261kr</p>
             <p>13kr / 100.0g</p>
@@ -75,7 +103,7 @@
             <p>Varastossa L&auml;hetet&auml;&auml;n yleens&auml; 24 tunnin sis&auml;ll&auml;</p>
         </div>
 
-        <div id="4kg-mobile" class="col-xs-12 product-price-mobile">
+        <div class="col-xs-12 pr-price-mobile d2">
             <p class="price-rrp-mobile">Oli <del>611kr</del> S&auml;&auml;st&auml; 122kr</p>
             <p class="price">489kr</p>
             <p>12kr / 100.0g</p>
@@ -121,20 +149,20 @@
             <button class="col-xs-12 btn btn-add-to-cart" type="submit"><span class="fa fa-shopping-basket"></span>Lis&auml;&auml; ostoskoriin</button>
             <button class="col-xs-12 btn btn-review" type="submit">Write a Review</button>
 
-            <div class="col-sm-12 product-price">
+            <div class="col-sm-12 pr-price d1">
                 <div class="col-sm-4 col-md-5">
-                  <div class="pr-price 2kg">
-                      <p class="price-rrp">Oli: <del>328kr</del><br>
-                      <p class="price">262 kr<br>
-                      <p class="saving">S&auml;&auml;st&auml;: 66kr</p>
-                      <p class="price-per-kg">13kr / 100.0g</p>
-                  </div>
-                  <div class="pr-price 4kg">
-                      <p class="price-rrp">Oli: <del>615kr</del><br>
-                      <p class="price">489 kr<br>
-                      <p class="saving">S&auml;&auml;st&auml;: 122kr</p>
-                      <p class="price-per-kg">12kr / 100.0g</p>
-                  </div>
+                    <div class="pr-price 2kg">
+                        <p class="price-rrp">Oli: <del>328kr</del><br>
+                            <p class="price">262 kr<br>
+                                <p class="saving">S&auml;&auml;st&auml;: 66kr</p>
+                                <p class="price-per-kg">13kr / 100.0g</p>
+                    </div>
+                    <div class="pr-price d2">
+                        <p class="price-rrp">Oli: <del>615kr</del><br>
+                            <p class="price">489 kr<br>
+                                <p class="saving">S&auml;&auml;st&auml;: 122kr</p>
+                                <p class="price-per-kg">12kr / 100.0g</p>
+                    </div>
                 </div>
                 <div class="col-sm-4">
                     <label class="col-sm-12">Lukum&auml;&auml;r&auml;:</label>
@@ -165,71 +193,47 @@
         <div class="col-xs-12 col-md-10 col-md-offset-1 product-info">
             <button class="accordion">YLEIST&Auml;</button>
             <div class="panel">
-                  Mass Whey on yksi suosituimmista tuotteistamme kautta aikojen, se on makutestien voittaja ja oikea kestosuosikki heraproteiinien maailmassa! Heraproteiini on yksi lis&auml;ravinteiden kulmakivist&auml;. Proteiini on v&auml;ltt&auml;m&auml;t&ouml;n lihasmassan yll&auml;pit&auml;miselle ja sen lis&auml;&auml;miselle.
+                Mass Whey on yksi suosituimmista tuotteistamme kautta aikojen, se on makutestien voittaja ja oikea kestosuosikki heraproteiinien maailmassa! Heraproteiini on yksi lis&auml;ravinteiden kulmakivist&auml;. Proteiini on v&auml;ltt&auml;m&auml;t&ouml;n lihasmassan
+                yll&auml;pit&auml;miselle ja sen lis&auml;&auml;miselle. Mass Whey on markkinoiden laadukkain ja parhaimman makuinen heraproteiini edullisesti. Makutestien voittaja erinomaisella sekoitettavuudella &ndash; unohda hiutaleiset, mauttomat
+                ja hampaisiin kiinni j&auml;&auml;v&auml;t proteiinijauheet. T&auml;t&auml; hinta:laatu&ndash;suhdetta ei ihan heti ly&ouml;d&auml; laudalta.
 
-                  Mass Whey on markkinoiden laadukkain ja parhaimman makuinen heraproteiini edullisesti. Makutestien voittaja erinomaisella sekoitettavuudella &ndash; unohda hiutaleiset, mauttomat ja hampaisiin kiinni j&auml;&auml;v&auml;t proteiinijauheet.
+                <h4>MASS WHEY &ndash; HERAPROTEIINI</h4> Mass Whey &ndash;heraproteiini on todella laadukas instantoitu ultrasuodatettu heraproteiinisekoitus. Jokaisessa annoksessa Mass Whey &ndash;heraproteiinia on 21g laadukasta proteiinia. Mass Whey on syyst&auml; j&auml;&auml;nyt monien
+                suosikiksi. Mass Whey:n saat sek&auml; tutuissa mauissa, ett&auml; uusissa mauissa, mit&auml; tuotekehityksen puolella jatkuvasti kehitet&auml;&auml;n. Lis&auml;&auml;mme uusia makuja jatkuvasti. Whey on maultaan erinomainen ja sekoittuu
+                hyvin. Tuotteeseen on lis&auml;tty my&ouml;s L&ndash;glutamiinia tehostamaan palautumista!
 
-                  T&auml;t&auml; hinta:laatu&ndash;suhdetta ei ihan heti ly&ouml;d&auml; laudalta.
+                <h4>HERAPROTEIININ K&Auml;YTT&Ouml;</h4> Riitt&auml;v&auml; proteiinin saanti on edellytyksen&auml; lihasmassan yll&auml;pidolle ja lis&auml;&auml;miselle. Proteiinia tarvitaan sek&auml; lihassolukon uusimiseen, rakentamiseen, ett&auml; korjaamiseen. Proteiinia saa toki helposti
+                my&ouml;s ravinnosta, mutta heraproteiini lis&auml;ravinteena on saanut huiman suosion sen hyv&auml;n maun ja helppok&auml;ytt&ouml;isyyden vuoksi. Jauheena nautittuna proteiini my&ouml;s imeytyy nopeammin ja vaatii ruoansulatukseltamme
+                v&auml;hemm&auml;n &ndash; jauhe imeytyy huomattavasti kokolihaa helpommin ja nopeammin. Proteiinin suositeltu p&auml;ivitt&auml;inen m&auml;&auml;r&auml; (g) on noin 1.5&ndash;2 kertaa kehonpaino. T&auml;m&auml; m&auml;&auml;r&auml; tulisi
+                jakaa mahdollisimman tasaisesti koko p&auml;iv&auml;lle, mink&auml; vuoksi pienten aterioiden nauttiminen useasti p&auml;iv&auml;n aikana onkin niin suosittua. Kerrallaan proteiinia imeytyy henkil&ouml;n koosta, lihasmassan m&auml;&auml;r&auml;st&auml;
+                ja muista tekij&ouml;ist&auml; riippuen kaikkea 15g ja 40g v&auml;lilt&auml;. Sopiva proteiinin m&auml;&auml;r&auml; l&ouml;ytyy kokeilemalla.
 
-                  <h4>MASS WHEY &ndash; HERAPROTEIINI</h4>
+                <h4>LAATU &amp; VALMISTUS</h4> Erinomainen maku, sekoittuvuus ja laatu on pitk&auml;n tutkimus&ndash; ja kehitysty&ouml;n tulosta. Parhaan hy&ouml;dyn saavuttamiseksi voit nauttia 1&ndash;2 proteiinijuomaa v&auml;litt&ouml;m&auml;sti treenin j&auml;lkeen, treeni&auml;
+                ennen tai p&auml;iv&auml;n aikana ruokailujen v&auml;liss&auml;. Voit my&ouml;s nauttia juomaa v&auml;lipalana sellaisenaan tai yhdess&auml; hedelm&auml;n tai hedelm&auml;mehun kanssa turvataksesi riitt&auml;v&auml;n proteiinin saannin.
 
-                  Mass Whey &ndash;heraproteiini on todella laadukas instantoitu ultrasuodatettu heraproteiinisekoitus. Jokaisessa annoksessa Mass Whey &ndash;heraproteiinia on 21g laadukasta proteiinia.
-
-                  Mass Whey on syyst&auml; j&auml;&auml;nyt monien suosikiksi. Mass Whey:n saat sek&auml; tutuissa mauissa, ett&auml; uusissa mauissa, mit&auml; tuotekehityksen puolella jatkuvasti kehitet&auml;&auml;n. Lis&auml;&auml;mme uusia makuja jatkuvasti.
-
-                  Whey on maultaan erinomainen ja sekoittuu hyvin. Tuotteeseen on lis&auml;tty my&ouml;s L&ndash;glutamiinia tehostamaan palautumista!
-
-                  <h4>HERAPROTEIININ K&Auml;YTT&Ouml;</h4>
-
-                  Riitt&auml;v&auml; proteiinin saanti on edellytyksen&auml; lihasmassan yll&auml;pidolle ja lis&auml;&auml;miselle. Proteiinia tarvitaan sek&auml; lihassolukon uusimiseen, rakentamiseen, ett&auml; korjaamiseen.
-
-                  Proteiinia saa toki helposti my&ouml;s ravinnosta, mutta heraproteiini lis&auml;ravinteena on saanut huiman suosion sen hyv&auml;n maun ja helppok&auml;ytt&ouml;isyyden vuoksi. Jauheena nautittuna proteiini my&ouml;s imeytyy nopeammin ja vaatii ruoansulatukseltamme v&auml;hemm&auml;n &ndash; jauhe imeytyy huomattavasti kokolihaa helpommin ja nopeammin.
-
-                  Proteiinin suositeltu p&auml;ivitt&auml;inen m&auml;&auml;r&auml; (g) on noin 1.5&ndash;2 kertaa kehonpaino. T&auml;m&auml; m&auml;&auml;r&auml; tulisi jakaa mahdollisimman tasaisesti koko p&auml;iv&auml;lle, mink&auml; vuoksi pienten aterioiden nauttiminen useasti p&auml;iv&auml;n aikana onkin niin suosittua. Kerrallaan proteiinia imeytyy henkil&ouml;n koosta, lihasmassan m&auml;&auml;r&auml;st&auml; ja muista tekij&ouml;ist&auml; riippuen kaikkea 15g ja 40g v&auml;lilt&auml;. Sopiva proteiinin m&auml;&auml;r&auml; l&ouml;ytyy kokeilemalla.
-
-                  <h4>LAATU &amp; VALMISTUS</h4>
-
-                  Erinomainen maku, sekoittuvuus ja laatu on pitk&auml;n tutkimus&ndash; ja kehitysty&ouml;n tulosta.
-
-                  Parhaan hy&ouml;dyn saavuttamiseksi voit nauttia 1&ndash;2 proteiinijuomaa v&auml;litt&ouml;m&auml;sti treenin j&auml;lkeen, treeni&auml; ennen tai p&auml;iv&auml;n aikana ruokailujen v&auml;liss&auml;. Voit my&ouml;s nauttia juomaa v&auml;lipalana sellaisenaan tai yhdess&auml; hedelm&auml;n tai hedelm&auml;mehun kanssa turvataksesi riitt&auml;v&auml;n proteiinin saannin.
-
-                  <h4>TIEDOKSI ALLERGISILLE</h4>
-
-                  Sis&auml;lt&auml;&auml; maitoa ja soijalesitiini&auml; (emulgointiaine).
+                <h4>TIEDOKSI ALLERGISILLE</h4> Sis&auml;lt&auml;&auml; maitoa ja soijalesitiini&auml; (emulgointiaine).
             </div>
 
             <button class="accordion">K&Auml;YTT&Ouml;OHJE</button>
             <div class="panel">
-              Sekoita 1 annosmitallinen (28 g) jauhetta 100&ndash;200 ml:aan kylm&auml;&auml; vett&auml; tai maitoa. Nauti 1&ndash;3 annosta p&auml;iv&auml;ss&auml;.
+                Sekoita 1 annosmitallinen (28 g) jauhetta 100&ndash;200 ml:aan kylm&auml;&auml; vett&auml; tai maitoa. Nauti 1&ndash;3 annosta p&auml;iv&auml;ss&auml;.
 
-              <h4>S&Auml;ILYTYSOHJE</h4>
-
-              S&auml;ilytet&auml;&auml;n kuivassa ja viile&auml;ss&auml;.
+                <h4>S&Auml;ILYTYSOHJE</h4> S&auml;ilytet&auml;&auml;n kuivassa ja viile&auml;ss&auml;.
             </div>
 
             <button class="accordion">AINESOSAT</button>
             <div class="panel">
                 Glutamiinia 1000mg/100g, 280mg/28g annos.
 
-                <h4>Banana, Vanilla:</h4>
+                <h4>Banana, Vanilla:</h4> Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), aromi, v&auml;ri (kurkumiini), emulgointiaine (soijalesitiini), makeutusaine (sukraloosi).
 
-                Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), aromi, v&auml;ri (kurkumiini), emulgointiaine (soijalesitiini), makeutusaine (sukraloosi).
+                <h4>Choc/Banana, Choc/Mint, Chocolate, Choc/Orange, Choc/Peanut:</h4> Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), kaakaojauhe, aromi, emulgointiaine (soijalesitiini), makeutusaine (sukraloosi).
 
-                <h4>Choc/Banana, Choc/Mint, Chocolate, Choc/Orange, Choc/Peanut:</h4>
+                <h4>Orange/Cream:</h4> Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), aromi, v&auml;ri (paprikauute), emulgointiaine (soijalesitiini), makeutusaine (sukraloosi).
 
-                Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), kaakaojauhe, aromi, emulgointiaine (soijalesitiini), makeutusaine (sukraloosi).
+                <h4>Raspberry, Strawberry:</h4> Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), aromi, v&auml;ri (punajuuriv&auml;ri), happamuudens&auml;&auml;t&ouml;aine (sitruunahappo), emulgointiaine (soijalesitiini), makeutusaine
+                (sukraloosi).
 
-                <h4>Orange/Cream:</h4>
-
-                Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), aromi, v&auml;ri (paprikauute), emulgointiaine (soijalesitiini), makeutusaine (sukraloosi).
-
-                <h4>Raspberry, Strawberry:</h4>
-
-                Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), aromi, v&auml;ri (punajuuriv&auml;ri), happamuudens&auml;&auml;t&ouml;aine (sitruunahappo), emulgointiaine (soijalesitiini), makeutusaine (sukraloosi).
-
-                <h4>Unflavoured:</h4>
-
-                Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), emulgointiaine (soijalesitiini).
+                <h4>Unflavoured:</h4> Mass Whey Protein Blend (heraproteiinikonsentraatti ja &ndash;hydrolysaatti, L&ndash;glutamiini), emulgointiaine (soijalesitiini).
             </div>
             <button class="accordion">RAVINTOSIS&Auml;LT&Ouml;</button>
             <div class="panel">
